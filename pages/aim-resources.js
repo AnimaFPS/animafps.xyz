@@ -27,8 +27,6 @@ export default function aimResources() {
         <meta property="og:image" content="https://animafps.github.io/aim-resources/Screenshot.png"/>
         <meta property="og:description" content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"/>
         <meta property="og:site_name" content="Anima's Stuff"/>
-
-        <link rel="canonical" href="https://animafps.vercel.app"/>
     </Head>
     <Navbar bg="primary" variant="dark" expand="lg">
         <Navbar.Brand>AnimaFPS</Navbar.Brand>
