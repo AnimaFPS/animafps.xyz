@@ -2,12 +2,7 @@ import Head from 'next/head'
 import { NavDropdown, Nav , Navbar, Container, Row, Col, Form } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
-let ofov;
-const onChange = (e) => {
-  ofov = e.target.value
-  console.log(ofov)
-}
+import FovConvertForm from '../lib/fov-convert'
 
 export default function FovConvert() {
   return (
@@ -55,32 +50,7 @@ export default function FovConvert() {
         <br/>
         <h1>FOV and Focal Length Scaling Converter/ Calculator</h1>
         <br/>
-        <Row>
-          <Col xs={6}>
-            <h3>Inputs</h3>
-            <Form>
-              <Form.Group controlId="ifovt">
-                <Form.Label>Input FOV Type</Form.Label>
-                <Form.Control as="select" onChange={onChange}>
-                  <option value="">--Please choose an option--</option>
-									<option value="0.5625">16:9 hFOV (OW, Val, QC)</option>
-									<option value="0.75">4:3 hFOV (Source, Quake)</option>
-									<option value="1">vFOV (R6, OW(ads))</option>
-									<option value="other">Other WIP</option>
-                </Form.Control>
-              </Form.Group>
-            </Form>
-          </Col>
-          <Col xs={6}>
-            <h3>Outputs</h3>
-            <Form>
-              <Form.Group>
-                <Form.Label>Output FOV</Form.Label>
-                <Form.Control value={ofov}/>
-              </Form.Group>
-            </Form>
-          </Col>
-        </Row>
+        <FovConvertForm/>
       </Container>
       <footer className="mt-auto py-3 bg-dark">
         <Container>
