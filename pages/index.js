@@ -25,7 +25,6 @@ export default function Home() {
         <meta content="https://animafps.github.io/Screenshot.png" property="og:image"/>
         <meta content="Homepage for Anima's website" property="og:description"/>
         <meta content="Anima's Stuff" property="og:site_name"/>
-        <script defer data-cf-beacon='{"token": "f59c812d0cf444eb83480b0a41caf00a"}' src="https://static.cloudflareinsights.com/beacon.min.js"></script>
       </Head>
       <Navbar bg="primary" variant="dark" expand="lg">
         <Navbar.Brand>AnimaFPS</Navbar.Brand>
@@ -64,7 +63,7 @@ export default function Home() {
                     alt="fov-convert"
                     width={1246}
                     height={878}
-                    sizes="40vw"
+                    sizes="20vw"
                     layout="responsive"
                   />
                 </a></Link>
@@ -84,7 +83,7 @@ export default function Home() {
                     alt="dbt-callouts"
                     width={1372}
                     height={877}
-                    sizes="40vw"
+                    sizes="20vw"
                     layout="responsive"
                   />
                 </a></Link>
@@ -104,7 +103,7 @@ export default function Home() {
                     alt="dbt-glicko"
                     width={1333}
                     height={884}
-                    sizes="40vw"
+                    sizes="20vw"
                     layout="responsive"
                   />
                 </a></Link>
@@ -124,7 +123,7 @@ export default function Home() {
                     alt="aim-resources"
                     width={1710}
                     height={901}
-                    sizes="40vw"
+                    sizes="20vw"
                     layout="responsive"
                   />
                 </a></Link>
@@ -142,7 +141,7 @@ export default function Home() {
                     alt="fpsmath"
                     width={1280}
                     height={640}
-                    sizes="40vw"
+                    sizes="20vw"
                     layout="responsive"
                   />
                 </a></Link>
