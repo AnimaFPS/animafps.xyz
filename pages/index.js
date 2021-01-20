@@ -3,7 +3,7 @@ import { Jumbotron, NavDropdown, Nav , Navbar, Container, Button, Row, Col, Card
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitch, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       <Head>
         <title>Anima's Stuff</title>
         <meta charset="utf-8"/>
-        <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-        <meta content="Homepage for Anima's website" name="description"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Homepage for Anima's website"/>
         <meta content="summary_large_image" name="twitter:card"/>
         <meta content="@AnimaFPS" name="twitter:site"/>
         <meta content="Anima's Stuff" name="twitter:title"/>
@@ -64,6 +64,7 @@ export default function Home() {
                     alt="fov-convert"
                     width={1246}
                     height={878}
+                    layout="responsive"
                   />
                 </a></Link>
                 <Card.Body>
@@ -82,6 +83,7 @@ export default function Home() {
                     alt="dbt-callouts"
                     width={1372}
                     height={877}
+                    layout="responsive"
                   />
                 </a></Link>
                 <Card.Body>
@@ -100,6 +102,7 @@ export default function Home() {
                     alt="dbt-glicko"
                     width={1333}
                     height={884}
+                    layout="responsive"
                   />
                 </a></Link>
                 <Card.Body>
@@ -118,6 +121,7 @@ export default function Home() {
                     alt="aim-resources"
                     width={1710}
                     height={901}
+                    layout="responsive"
                   />
                 </a></Link>
                 <Card.Body>
@@ -134,6 +138,7 @@ export default function Home() {
                     alt="fpsmath"
                     width={1280}
                     height={640}
+                    layout="responsive"
                   />
                 </a></Link>
                 <Card.Body>
@@ -148,9 +153,14 @@ export default function Home() {
       <footer className="mt-auto py-3 bg-dark">
         <Container>
           <span className="text-muted">Anima's Stuff &copy; 2021. All Rights Reserved.</span>
-          <span class="float-right">
-            <a href="https://twitter.com/animafps"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://twitch.tv/animafps"><FontAwesomeIcon icon={faTwitch}/></a>
+          <span className="float-right">
+            <a href="https://twitter.com/animafps" aria-label="twitter"><FontAwesomeIcon icon={faTwitter} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://twitch.tv/animafps" aria-label="twitch"><FontAwesomeIcon icon={faTwitch} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://youtube.com/animafps" aria-label="youtube"><FontAwesomeIcon icon={faYoutube} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://instagram.com/animafps" aria-label="instagram"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://animafps.medium.com" aria-label="medium"><FontAwesomeIcon icon={faMedium} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://discord.com/invite/xJdQxps" aria-label="discord"><FontAwesomeIcon icon={faDiscord} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/animafps" aria-label="Github"><FontAwesomeIcon icon={faGithub} size="lg"/></a>
           </span>
         </Container>
       </footer>
