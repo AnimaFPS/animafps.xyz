@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { NavDropdown, Nav , Navbar, Container, Row, Col, Form } from 'react-bootstrap'
+import { NavDropdown, Nav , Navbar, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import FovConvertForm from '../lib/fov-convert'
