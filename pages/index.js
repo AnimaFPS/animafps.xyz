@@ -5,9 +5,7 @@ import { ThemeProvider, makeStyles } from '@material-ui/core/styles'
 import darkTheme from '../lib/theme'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
 import Grid from '@material-ui/core/Grid'
-import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Link from '@material-ui/core/Link'
@@ -50,6 +48,7 @@ export default function Home() {
   return (
     <>
     <ThemeProvider theme={darkTheme}>
+      <CssBaseline/>
       <Head>
         <title>Anima's Stuff</title>
         <meta name="description" content="Homepage for Anima's website"/>
