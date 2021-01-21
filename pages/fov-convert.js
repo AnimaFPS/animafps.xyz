@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { NavDropdown, Nav , Navbar, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import FovConvertForm from '../lib/fov-convert'
+import { FovConvertForm, FocalLengthForm } from '../lib/fov-convert'
 
 export default function FovConvert() {
   return (
@@ -50,8 +50,20 @@ export default function FovConvert() {
         <br/>
         <h1>FOV and Focal Length Scaling Converter/ Calculator</h1>
         <br/>
+        <h2>FOV Conversion</h2>
         <FovConvertForm/>
+        <p>Here is a fov converter if you want the same equivalent fov in different games or fov types/ratios or just find the true fov, if you don't know the fov of your game use this tool to find it: <a href = "https://www.desmos.com/calculator/3e9hs7usyr">https://www.desmos.com/calculator/3e9hs7usyr</a></p>
+				<h4>The Math Behind</h4>
+        Field of View Conversion:<br/>
+        <code>
+          Output FOV = atan(((Output FOV Ratio)/(Input FOV Ratio)) * tan(oldFOV * PI/360)) * 360/PI
+          when using radians if using degrees then change * 360/pi to * 180
+				</code>
+        <hr/>
+        <h2>Focal Length Scaling</h2>
+        <FocalLengthForm/>
       </Container>
+      <br/>
       <footer className="mt-auto py-3 bg-dark">
         <Container>
           <span className="text-muted">Anima's Stuff &copy; 2021. All Rights Reserved.</span>
