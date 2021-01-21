@@ -1,17 +1,57 @@
 import Head from 'next/head'
-import { Jumbotron, NavDropdown, Nav , Navbar, Container, Button, Row, Col, Card } from 'react-bootstrap'
 import Image from 'next/image'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles'
+import darkTheme from '../lib/theme'
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
+import Grid from '@material-ui/core/Grid'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import Container from '@material-ui/core/Container'
+import Link from '@material-ui/core/Link'
+import Button from '@material-ui/core/Button'
+import Navbar from '../lib/navbar'
+import Footer from '../lib/footer'
+
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const useStyles = makeStyles((theme) => ({
+  icon: {
+    marginRight: theme.spacing(2),
+  },
+  heroContent: {
+    backgroundColor: '#303030',
+    padding: theme.spacing(8, 0, 6),
+  },
+  heroButtons: {
+    marginTop: theme.spacing(4),
+  },
+  cardGrid: {
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
+  },
+  card: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  cardContent: {
+    flexGrow: 1,
+  },
+  link: {
+    color: '#00bc8c'
+  }
+}));
 
 export default function Home() {
+  const classes = useStyles()
   return (
     <>
+    <ThemeProvider theme={darkTheme}>
       <Head>
         <title>Anima's Stuff</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="description" content="Homepage for Anima's website"/>
         <meta content="summary_large_image" name="twitter:card"/>
         <meta content="@AnimaFPS" name="twitter:site"/>
@@ -26,148 +66,82 @@ export default function Home() {
         <meta content="Homepage for Anima's website" property="og:description"/>
         <meta content="Anima's Stuff" property="og:site_name"/>
       </Head>
-      <Navbar bg="primary" variant="dark" expand="lg">
-        <Navbar.Brand>AnimaFPS</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/" active="true">Home</Nav.Link>
-            <NavDropdown title="Math and Sens Conversion">
-              <NavDropdown.Item href="/fov-convert">FOV Conversion</NavDropdown.Item>
-              <NavDropdown.Item href="/fpsmath">FPSMath Discord Bot</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Diabotical Stuff">
-              <NavDropdown.Item href="/dbt-callouts">Diabotical 3v3 Map Callouts</NavDropdown.Item>
-              <NavDropdown.Item href="/dbt-glicko">Diabotical OCE Team Ranking</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="/aim-resources">Aim resources</Nav.Link>
-            <Nav.Link href="/blog">Blog & Articles</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-      <Jumbotron className="text-center">
-        <Container>
-          <h1>Anima's Stuff/ Projects</h1>
-          <p>Just all the stuff that I make and create that exist on this website as well as other cool things</p>
-          <Button variant="primary" href="/about-me">About Me</Button>
+      <Navbar />
+        <div className={classes.heroContent}>
+          <Container maxWidth="md" >
+            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+              Anima's Stuff/ Projects
+            </Typography>
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              Just all the stuff that I make and create that exist on this website as well as other cool things
+            </Typography>
+            <div className={classes.heroButtons}>
+              <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Link href='/about-me'>
+                    <Button variant="contained" color="primary">
+                      About me
+                    </Button>
+                  </Link>
+                </Grid>
+              </Grid>
+            </div>
+          </Container>
+        </div>
+        <Container className={classes.cardGrid} maxWidth="md">
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6} md={5}>
+                <Card className={classes.card}>
+                  <Link href="/fpsmath">
+                    <Image
+                      src="/images/fpsmath.png"
+                      alt="fpsmath"
+                      width={1280}
+                      height={640}
+                      sizes="20vw"
+                      layout="responsive"
+                    />
+                  </Link>
+                  <CardContent className={classes.cardContent}>
+                    <Link href="/fpsmath">
+                      <Typography gutterBottom variant="h5" component="h2" className={classes.link}>
+                        FPSMath Discord Bot
+                      </Typography>
+                    </Link>
+                    <Typography>
+                      A Discord bot designed to convert sensitivities, fovs, mouse feel across themselves and preset games
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} sm={6} md={5}>
+                <Card className={classes.card}>
+                  <Link href="/fov-convert">
+                    <Image
+                      src="/images/fov-convert.png"
+                      alt="fov-convert"
+                      width={1246}
+                      height={878}
+                      sizes="20vw"
+                      layout="responsive"
+                    />
+                  </Link>
+                  <CardContent className={classes.cardContent}>
+                    <Link href="/fov-convert">
+                      <Typography gutterBottom variant="h5" component="h2" className={classes.link}>
+                      FOV and Focal Length Scaling Converter/ Calculator
+                      </Typography>
+                    </Link>
+                    <Typography>
+                      A Discord bot designed to convert sensitivities, fovs, mouse feel across themselves and preset games
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+          </Grid>
         </Container>
-      </Jumbotron>
-      <div className="album py-5">
-        <Container>
-          <Row>
-            <Col md={4}>
-              <Card className="mb-4 shadow-sm">
-                <Link href="/fov-convert"><a>
-                  <Image
-                    src="/images/fov-convert.png"
-                    alt="fov-convert"
-                    width={1246}
-                    height={878}
-                    sizes="20vw"
-                    layout="responsive"
-                  />
-                </a></Link>
-                <Card.Body>
-                <Link href="/fov-convert"><a><Card.Title>FOV and Focal Length Scaling Converter/ Calculator</Card.Title></a></Link>
-                  <Card.Text>
-                    A calculator to convert different fov values per the fov aspect ratio and can calculate sensitivty change for a change in fov
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="mb-4 shadow-sm">
-                <Link href="/dbt-callouts"><a>
-                  <Image
-                    src="/images/dbt-callouts.png"
-                    alt="dbt-callouts"
-                    width={1372}
-                    height={877}
-                    sizes="20vw"
-                    layout="responsive"
-                  />
-                </a></Link>
-                <Card.Body>
-                <Link href="/dbt-callouts"><a><Card.Title>Diabotical Competitive Map Callouts</Card.Title></a></Link>
-                  <Card.Text>
-                  A collection of the Diabotical competitive maps' minimaps with callouts overlayed
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="mb-4 shadow-sm">
-                <Link href="/dbt-glicko"><a>
-                  <Image
-                    src="/images/dbt-glicko.png"
-                    alt="dbt-glicko"
-                    width={1333}
-                    height={884}
-                    sizes="20vw"
-                    layout="responsive"
-                  />
-                </a></Link>
-                <Card.Body>
-                <Link href="/dbt-glicko"><a><Card.Title>OCE Diabotical Team Rankings</Card.Title></a></Link>
-                  <Card.Text>
-                  An implementation of the Glicko2 rating system to rank the Oceania Diabotical competitive teams
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="mb-4 shadow-sm">
-                <Link href="/aim-resources"><a>
-                  <Image
-                    src="/images/aim-resources.png"
-                    alt="aim-resources"
-                    width={1710}
-                    height={901}
-                    sizes="20vw"
-                    layout="responsive"
-                  />
-                </a></Link>
-                <Card.Body>
-                <Link href="/aim-resources"><a><Card.Title>Aggregate of Every Aiming Resource</Card.Title></a></Link>
-                  <Card.Text>Big aggregated sheet of every Aiming Resource ever made including guides general and specific routines, videos and more</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="mb-4 shadow-sm">
-                <Link href="/fpsmath"><a>
-                  <Image
-                    src="/images/fpsmath.png"
-                    alt="fpsmath"
-                    width={1280}
-                    height={640}
-                    sizes="20vw"
-                    layout="responsive"
-                  />
-                </a></Link>
-                <Card.Body>
-                <Link href="/fpsmath"><a><Card.Title>FPSMath Discord Bot</Card.Title></a></Link>
-                  <Card.Text>A Discord bot designed to convert sensitivities, fovs, mouse feel across themselves and preset games</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <footer className="mt-auto py-3 bg-dark">
-        <Container>
-          <span className="text-muted">Anima's Stuff &copy; 2021. All Rights Reserved.</span>
-          <span className="float-right">
-            <a href="https://twitter.com/animafps" aria-label="twitter"><FontAwesomeIcon icon={faTwitter} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitch.tv/animafps" aria-label="twitch"><FontAwesomeIcon icon={faTwitch} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://youtube.com/animafps" aria-label="youtube"><FontAwesomeIcon icon={faYoutube} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com/animafps" aria-label="instagram"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://animafps.medium.com" aria-label="medium"><FontAwesomeIcon icon={faMedium} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://discord.com/invite/xJdQxps" aria-label="discord"><FontAwesomeIcon icon={faDiscord} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/animafps" aria-label="Github"><FontAwesomeIcon icon={faGithub} size="lg"/></a>
-          </span>
-        </Container>
-      </footer>
+        <Footer/>
+    </ThemeProvider>
     </>
   )
 }

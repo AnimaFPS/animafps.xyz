@@ -11,7 +11,6 @@ export default function aimResources() {
     <Head>
         <title>Aggregated Aiming Resources By Anima</title>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
         <meta name="description" content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
