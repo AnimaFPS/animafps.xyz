@@ -8,7 +8,7 @@ import Container from '@material-ui/core/Container'
 import Link from '@material-ui/core/Link'
 import Button from '@material-ui/core/Button'
 import Navbar from '../components/navbar'
-import Footer from '../lib/footer'
+import Footer from '../components/footer'
 import { Jumbotron } from 'react-bootstrap'
 import { ThemeProvider } from '@material-ui/core'
 import darkTheme from '../lib/theme'
@@ -60,7 +60,7 @@ export default function Home() {
         <Container maxWidth="md">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={5}>
-                <Card>
+                <Card className="shadow-sm">
                   <Link href="/fpsmath">
                     <Image
                       src="/images/fpsmath.png"
@@ -98,7 +98,7 @@ export default function Home() {
                   <CardContent>
                     <Link href="/fov-convert">
                       <Typography gutterBottom variant="h5" component="h2">
-                      FOV and Focal Length Scaling Converter/ Calculator
+                        FOV and Focal Length Scaling Converter/ Calculator
                       </Typography>
                     </Link>
                     <Typography>
@@ -109,6 +109,7 @@ export default function Home() {
               </Grid>
           </Grid>
         </Container>
+        <br/>
         <Footer/>
         </ThemeProvider>
     </>

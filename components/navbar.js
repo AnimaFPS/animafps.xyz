@@ -14,18 +14,6 @@ const useStyles = makeStyles((theme) => ({
         listStyle: 'none',
       },
     },
-    appBar: {
-      borderBottom: `1px solid ${theme.palette.divider}`,
-    },
-    toolbar: {
-      flexWrap: 'wrap',
-    },
-    toolbarTitle: {
-      flexGrow: 1,
-    },
-    link: {
-      margin: theme.spacing(1, 1.5),
-    },
   }));
 
 const navLinks = [
@@ -42,14 +30,14 @@ const Navbar = () => {
     return (
         <>
           <ThemeProvider theme={darkTheme}>
-            <AppBar position="static" color="primary" elevation={0} className={classes.appBar}>
-                <Toolbar className={classes.toolbar}>
-                    <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+            <AppBar position="static" color="primary" elevation={0}>
+                <Toolbar style={{flexWrap: 'wrap'}}>
+                    <Typography variant="h6" color="inherit" noWrap style={{flexGrow: '1'}}>
                         AnimaFPS
                     </Typography>
                     <nav>
                         {navLinks.map(({ title, path }) => (
-                            <Link variant="button" color="inherit" href={path} key={title} className={classes.link}>
+                            <Link variant="button" color="inherit" href={path} key={title} style={{marginRight: "10px"}}>
                             {title}
                             </Link>
                         ))}

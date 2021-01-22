@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import Container from '@material-ui/core/Container'
+import { Container } from 'react-bootstrap'
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="mt-auto py-3 bg-dark">
             <Container>
-            <span>Anima's Stuff &copy; 2021. All Rights Reserved.</span>
-            <span>
-                <a href="https://twitter.com/animafps" aria-label="twitter"><FontAwesomeIcon icon={faTwitter}/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="text-muted">Anima's Stuff &copy; 2021. All Rights Reserved.</span>
+            <span className="float-right">
+                <a href="https://twitter.com/animafps" aria-label="twitter"><FontAwesomeIcon icon={faTwitter} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://twitch.tv/animafps" aria-label="twitch"><FontAwesomeIcon icon={faTwitch} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://youtube.com/animafps" aria-label="youtube"><FontAwesomeIcon icon={faYoutube} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://instagram.com/animafps" aria-label="instagram"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

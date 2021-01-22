@@ -1,18 +1,17 @@
 import Head from 'next/head'
-import { FovConvertForm } from '../lib/fov-convert'
+import { FovConvertForm, FocalLengthForm } from '../lib/fov-convert'
 import Navbar from '../components/navbar'
-import { Container, ThemeProvider, CssBaseline, Typography } from '@material-ui/core'
-import Footer from '../lib/footer'
+import { ThemeProvider, Typography } from '@material-ui/core'
+import Footer from '../components/footer'
 import darkTheme from '../lib/theme'
+import { Container } from 'react-bootstrap'
 
 export default function FovConvert() {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
-        <CssBaseline/>
         <Head>
           <title>FOV and Focal Length Scaling Converter/ Calculator</title>
-          <meta charset="utf-8"/>
           <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
           <meta name="description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
 
@@ -32,14 +31,13 @@ export default function FovConvert() {
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
         <Navbar />
-        <Container>
+        <Container className="shadow-sm bg-secondary rounded" style={{paddingBottom: '30px', paddingLeft: '30px', paddingRight: '30px'}}>
           <br/>
-          <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+          <Typography component="h1" variant="h3" align="center" gutterBottom>
             FOV and Focal Length Scaling Converter/ Calculator
           </Typography>
-          <br/>
           <h2>FOV Conversion</h2>
-          <FovConvertForm/>
+          <FovConvertForm />
           <p>Here is a fov converter if you want the same equivalent fov in different games or fov types/ratios or just find the true fov, if you don't know the fov of your game use this tool to find it: <a href = "https://www.desmos.com/calculator/3e9hs7usyr">https://www.desmos.com/calculator/3e9hs7usyr</a></p>
           <h4>The Math Behind</h4>
           Field of View Conversion:<br/>
@@ -49,6 +47,7 @@ export default function FovConvert() {
           </code>
           <hr/>
           <h2>Focal Length Scaling</h2>
+          <FocalLengthForm/>
         </Container>
         <br/>
         <Footer/>

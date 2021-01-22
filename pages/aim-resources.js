@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { Navbar, Nav, NavDropdown, Container, Row, Col, Table } from 'react-bootstrap'
+import { Container, Row, Col, Table } from 'react-bootstrap'
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
 
 export default function aimResources() {
   return (
@@ -25,26 +25,9 @@ export default function aimResources() {
         <meta property="og:image" content="https://animafps.github.io/aim-resources/Screenshot.png"/>
         <meta property="og:description" content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"/>
         <meta property="og:site_name" content="Anima's Stuff"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     </Head>
-    <Navbar bg="primary" variant="dark" expand="lg">
-        <Navbar.Brand>AnimaFPS</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <NavDropdown title="Math and Sens Conversion">
-              <NavDropdown.Item href="/fov-convert">FOV Conversion</NavDropdown.Item>
-              <NavDropdown.Item href="/fpsmath">FPSMath Discord Bot</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Diabotical Stuff">
-              <NavDropdown.Item href="/dbt-callouts">Diabotical 3v3 Map Callouts</NavDropdown.Item>
-              <NavDropdown.Item href="/dbt-glicko">Diabotical OCE Team Ranking</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="/aim-resources" active="true">Aim resources</Nav.Link>
-            <Nav.Link href="/blog">Blog & Articles</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+    <Navbar />
       <Container>
         <br></br>
         <h1>Aggregated Aiming Resources</h1>
@@ -66,10 +49,10 @@ export default function aimResources() {
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" rowspan="13" className="align-middle bg-light text-dark text-center" id="documents">Documents</th>
+                                <th scope="row" rowSpan="13" className="align-middle bg-light text-dark text-center" id="documents">Documents</th>
                                 <td className="align-middle" ><a href="http://bit.ly/2l3jZTf" className="text-reset">Voltaic's Aim Journey</a></td>
                                 <td className="align-middle">All about aim theory and basics to aim training. a really good place to start for new people</td>
-                                <td className="align-middle" rowspan="4"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic/Sini</a></td>
+                                <td className="align-middle" rowSpan="4"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic/Sini</a></td>
                             </tr>
                             <tr>
                                 <td className="align-middle" ><a href="http://bit.ly/2TIudqA " className="text-reset font-weight-bold">Voltaic Advice FAQ</a></td>
@@ -86,7 +69,7 @@ export default function aimResources() {
                             <tr>
                                 <td className="align-middle" ><a href="https://www.dropbox.com/s/sggvgbwpz9e5bih/Strafe%20Aiming%20101.pdf?dl=0" className="text-reset font-weight-bold"> Strafe Aiming 101</a></td>
                                 <td className="align-middle">Theory of strafe aiming also includes routines</td>
-                                <td className="align-middle" rowspan="2"><a href="https://twitter.com/vF_Aimer7" className="text-reset">Aimer7</a></td>
+                                <td className="align-middle" rowSpan="2"><a href="https://twitter.com/vF_Aimer7" className="text-reset">Aimer7</a></td>
                             </tr>
                             <tr>
                                 <td className="align-middle" ><a href="https://www.dropbox.com/s/vaba3potfhf9jy1/KovaaK%20aim%20workout%20routines.pdf?dl=0" className="text-reset">Aimer7's Original Aim Workout/ Guide</a></td>
@@ -95,7 +78,7 @@ export default function aimResources() {
                             <tr>
                                 <td className="align-middle" ><a href="https://docs.google.com/document/d/1beDDud6BQu3DMXOrhAUZaFGP4V1568UCdiCAfS82j60/edit" className="text-reset">Aim Coaching 101</a></td>
                                 <td className="align-middle">All about what aim coaching is and why its bad and good. start here if you want aim coaching</td>
-                                <td className="align-middle" rowspan="2"><a href="https://twitter.com/AnimaFPS" className="text-reset">Anima</a></td>
+                                <td className="align-middle" rowSpan="2"><a href="https://twitter.com/AnimaFPS" className="text-reset">Anima</a></td>
                             </tr>
                             <tr>
                                 <td className="align-middle" ><a href="https://docs.google.com/document/d/1ws_gBG9SxMbSoBLl-42yi2o0hLCLXPofppZMrpHODMA/edit" className="text-reset font-weight-bold">Sensitivities 101</a></td>
@@ -127,10 +110,10 @@ export default function aimResources() {
                                 <td className="align-middle" ><a href="https://twitter.com/ProsperAims" className="text-reset">Prosper</a></td>
                             </tr>
                             <tr>
-                                <th scope="row" rowspan="9" className="align-middle bg-dark text-white text-center" id="routines-general">Routines (general)</th>
+                                <th scope="row" rowSpan="9" className="align-middle bg-dark text-white text-center" id="routines-general">Routines (general)</th>
                                 <td className="align-middle" ><a href="https://docs.google.com/document/d/1BPiDxbaqQVxInKwFfdr_AJdJDYVGKbUBGHJDKOeUy-Q/edit" className="text-reset font-weight-bold">Voltaic Fundamental aim training</a></td>
                                 <td className="align-middle">The best basic routine with the benchmarks built in. My recomendation for a simple routine for all levels</td>
-                                <td className="align-middle" rowspan="2"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic/ Sini </a></td>
+                                <td className="align-middle" rowSpan="2"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic/ Sini </a></td>
                             </tr>
                             <tr>
                                 <td className="align-middle" ><a href="https://docs.google.com/document/d/1wTzR9rPzS9QbA3lCxutHNk9wmSfSxV3F-PIE50kexZs/edit" className="text-reset">Voltaic recomended scenarios</a></td>
@@ -172,7 +155,7 @@ export default function aimResources() {
                                 <td className="align-middle" ><a href="https://twitter.com/krascsi" className="text-reset">Krascsi</a></td>
                             </tr>
                             <tr>
-                                <th scope="row" rowspan="14" className="align-middle bg-light text-dark text-center" id="routines-specific">Routines (specific)</th>
+                                <th scope="row" rowSpan="14" className="align-middle bg-light text-dark text-center" id="routines-specific">Routines (specific)</th>
                                 <td className="align-middle" ><a href="https://docs.google.com/document/d/1KClHkbHYJpJ6m81DKF3CO8THmn04GHuHvrslOsp8TbE/edit" className="text-reset font-weight-bold">PureRoutines</a></td>
                                 <td className="align-middle">Three amazing routines at the moment; PureSmoothness and PureSmoothness 1by1, Target switching, Movement and a game specific routine for Fortnite as well as some good advice for issue specific scenarios</td>
                                 <td className="align-middle" ><a href="https://twitter.com/PureGofficial" className="text-reset">PureG</a><a href="https://twitter.com/Free_sdk" className="text-reset">, sdk</a><a href="https://twitter.com/sens0001" className="text-reset">, sens</a><a href="https://twitter.com/Daanlve" className="text-reset">, Daan</a><a href="https://twitter.com/billiiss" className="text-reset">, bilis</a></td>
@@ -180,7 +163,7 @@ export default function aimResources() {
                             <tr>
                                 <td className="align-middle" ><a href="https://bit.ly/gameroutines" className="text-reset font-weight-bold">Voltaic Game Specific aim training </a></td>
                                 <td className="align-middle">Many game specific routines which include: CS/Val, Fortnite, AFPS, R6, Hyperscape, Apex, LG 1v1(AFPS), COD: Warzone</td>
-                                <td className="align-middle" rowspan="2"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic/ Sini</a><a href="https://twitter.com/vF_Aimer7" className="text-reset">, Aimer7</a>, Many other people check the bottom of the docs</td>
+                                <td className="align-middle" rowSpan="2"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic/ Sini</a><a href="https://twitter.com/vF_Aimer7" className="text-reset">, Aimer7</a>, Many other people check the bottom of the docs</td>
                             </tr>
                             <tr>
                                 <td className="align-middle" ><a href="https://bit.ly/3cNRNIR" className="text-reset font-weight-bold">Voltaic Issue specifc aim training</a></td>
@@ -225,7 +208,7 @@ export default function aimResources() {
                             <tr>
                                 <td className="align-middle" ><a href="https://docs.google.com/document/d/1BVVULzERkEF2EwK5n8nSaDrb5BHXSrrGV3vp6bQySbg/edit" className="text-reset">Fallen's Fortnite Guide</a></td>
                                 <td className="align-middle">Simple Fortnite specific routine with 2 tiers and information around aim trainer settings</td>
-                                <td className="align-middle" rowspan="2"><a href=" " className="text-reset">Fallen</a></td>
+                                <td className="align-middle" rowSpan="2"><a href=" " className="text-reset">Fallen</a></td>
                             </tr>
                             <tr>
                                 <td className="align-middle" ><a href="https://docs.google.com/document/d/1ZLxIw49PqQkMMXyYYAhtaY8r11I5Ngq61jxYyirdUaM/edit" className="text-reset">Fallen's Tac FPS Routine</a></td>
@@ -242,7 +225,7 @@ export default function aimResources() {
                                 <td className="align-middle" ><a href="https://twitter.com/wowaims" className="text-reset">wow Aims</a></td>
                             </tr>
                             <tr>
-                                <th scope="row" rowspan="2" className="align-middle bg-dark text-white text-center" id="videos">Videos</th>
+                                <th scope="row" rowSpan="2" className="align-middle bg-dark text-white text-center" id="videos">Videos</th>
                                 <td className="align-middle" ><a href="https://www.youtube.com/playlist?list=PLGmrwYxedS9DCV3Wg41sbLtQLZteaFXz0" className="text-reset font-weight-bold">HOW TO (Scenario) Guides</a></td>
                                 <td className="align-middle">Amazing series with videos teaching about every type of aiming. videos in this series: 1wall6targets te, Ground Plaza No ufo, Target switching, 1wall6target small, moving dots and thin gauntlet</td>
                                 <td className="align-middle" ><a href="https://twitter.com/christmasdenier" className="text-reset">Christmasiscancelled</a></td>
@@ -253,7 +236,7 @@ export default function aimResources() {
                                 <td className="align-middle" ><a href="https://twitter.com/ProsperAims" className="text-reset">Prosper</a></td>
                             </tr>
                             <tr>
-                                <th scope="row" rowspan="11" className="align-middle bg-light text-dark text-center" id="misc">Misc</th>
+                                <th scope="row" rowSpan="11" className="align-middle bg-light text-dark text-center" id="misc">Misc</th>
                                 <td className="align-middle" ><a href="https://bit.ly/2u8zZaF" className="text-reset font-weight-bold">Wrist stretch and posture guide</a></td>
                                 <td className="align-middle">Important to keep your health and stretches good when aiming and gaming</td>
                                 <td className="align-middle" ><a href="https://twitter.com/Kastor_uy" className="text-reset">Kastor</a></td>
@@ -261,7 +244,7 @@ export default function aimResources() {
                             <tr>
                                 <td className="align-middle" ><a href="http://bit.ly/2WB8Vvm" className="text-reset">Benchmark score tracking sheet</a></td>
                                 <td className="align-middle">A semi-automated script to record and track how close you are to the voltaic scores</td>
-                                <td className="align-middle" rowspan="4"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic</a></td>
+                                <td className="align-middle" rowSpan="4"><a href="https://twitter.com/VoltaicHQ" className="text-reset">Voltaic</a></td>
                             </tr>
                             <tr>
                                 <td className="align-middle"><a href="https://github.com/VoltaicHQ/Progress-Sheet-Updater" className="text-reset">Auto Progess Update Tool for Benchmarks</a></td>
@@ -313,20 +296,7 @@ export default function aimResources() {
       <Container>
         <p>Feedback very welcome to improve this sheet just DM me or reply on the reddit post</p> 
       </Container>
-      <footer className="mt-auto py-3 bg-dark">
-        <Container>
-          <span className="text-muted">Anima's Stuff &copy; 2021. All Rights Reserved.</span>
-          <span className="float-right">
-            <a href="https://twitter.com/animafps" aria-label="twitter"><FontAwesomeIcon icon={faTwitter} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitch.tv/animafps" aria-label="twitch"><FontAwesomeIcon icon={faTwitch} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://youtube.com/animafps" aria-label="youtube"><FontAwesomeIcon icon={faYoutube} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com/animafps" aria-label="instagram"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://animafps.medium.com" aria-label="medium"><FontAwesomeIcon icon={faMedium} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://discord.com/invite/xJdQxps" aria-label="discord"><FontAwesomeIcon icon={faDiscord} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/animafps" aria-label="Github"><FontAwesomeIcon icon={faGithub} size="lg"/></a>
-          </span>
-        </Container>
-      </footer>
+      <Footer />
    </>
   )
 }
