@@ -28,7 +28,6 @@ export default function FovConvert() {
           <meta property="og:image" content="http://animafps.vercel.app/images/fov-convert.png"/>
           <meta property="og:description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
           <meta property="og:site_name" content="Anima's Stuff"/>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
         <Navbar/>
         <Container className="shadow-sm" style={{paddingBottom: '30px', paddingLeft: '30px', paddingRight: '30px'}}>
@@ -52,6 +51,7 @@ export default function FovConvert() {
         <br/>
         <Footer/>
       </ThemeProvider>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     </>
   )
 }

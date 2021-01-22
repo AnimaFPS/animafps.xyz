@@ -27,7 +27,6 @@ export default function Home() {
         <meta content="https://animafps.github.io/Screenshot.png" property="og:image"/>
         <meta content="Homepage for Anima's website" property="og:description"/>
         <meta content="Anima's Stuff" property="og:site_name"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
       </Head>
       <Navbar />
         <Jumbotron>
@@ -114,6 +113,7 @@ export default function Home() {
         <br/>
         <Footer/>
         </ThemeProvider>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     </>
   )
 }

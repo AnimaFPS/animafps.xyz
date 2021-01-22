@@ -25,7 +25,6 @@ export default function aimResources() {
         <meta property="og:image" content="https://animafps.github.io/aim-resources/Screenshot.png"/>
         <meta property="og:description" content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"/>
         <meta property="og:site_name" content="Anima's Stuff"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     </Head>
     <Navbar />
       <Container>
@@ -297,6 +296,7 @@ export default function aimResources() {
         <p>Feedback very welcome to improve this sheet just DM me or reply on the reddit post</p> 
       </Container>
       <Footer />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
    </>
   )
 }
