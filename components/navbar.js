@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Link from '@material-ui/core/Link'
+import NextLink from 'next/link'
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import darkTheme from '../lib/theme'
 
@@ -37,9 +38,11 @@ const Navbar = () => {
                     </Typography>
                     <nav>
                         {navLinks.map(({ title, path }) => (
-                            <Link variant="button" color="inherit" href={path} key={title} style={{marginRight: "10px"}}>
-                            {title}
+                          <NextLink href={path} key={title}>
+                            <Link variant="button" color="inherit" style={{marginRight: "10px"}}>
+                              {title}
                             </Link>
+                          </NextLink>
                         ))}
                     </nav>
                 </Toolbar>

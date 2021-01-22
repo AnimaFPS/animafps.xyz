@@ -56,20 +56,24 @@ export default function Home() {
             <Grid item xs={12} sm={6} md={5}>
                 <Card className="shadow-sm">
                   <Link href="/fpsmath">
-                    <Image
-                      src="/images/fpsmath.png"
-                      alt="fpsmath"
-                      width={1280}
-                      height={640}
-                      sizes="20vw"
-                      layout="responsive"
-                    />
+                    <a>
+                      <Image
+                        src="/images/fpsmath.png"
+                        alt="fpsmath"
+                        width={1280}
+                        height={640}
+                        sizes="20vw"
+                        layout="responsive"
+                      />
+                    </a>
                   </Link>
                   <CardContent>
                     <Link href="/fpsmath">
-                      <Typography gutterBottom variant="h5" component="h2">
-                        FPSMath Discord Bot
-                      </Typography>
+                      <a>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          FPSMath Discord Bot
+                        </Typography>
+                      </a>
                     </Link>
                     <Typography>
                       A Discord bot designed to convert sensitivities, fovs, mouse feel across themselves and preset games
@@ -80,20 +84,24 @@ export default function Home() {
               <Grid item xs={12} sm={6} md={5}>
                 <Card>
                   <Link href="/fov-convert">
-                    <Image
-                      src="/images/fov-convert.png"
-                      alt="fov-convert"
-                      width={1246}
-                      height={878}
-                      sizes="20vw"
-                      layout="responsive"
-                    />
+                    <a>
+                      <Image
+                        src="/images/fov-convert.png"
+                        alt="fov-convert"
+                        width={1246}
+                        height={878}
+                        sizes="20vw"
+                        layout="responsive"
+                      />
+                    </a>
                   </Link>
                   <CardContent>
                     <Link href="/fov-convert">
-                      <Typography gutterBottom variant="h5" component="h2">
-                        FOV and Focal Length Scaling Converter/ Calculator
-                      </Typography>
+                      <a>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          FOV and Focal Length Scaling Converter/ Calculator
+                        </Typography>
+                      </a>
                     </Link>
                     <Typography>
                       A Discord bot designed to convert sensitivities, fovs, mouse feel across themselves and preset games
