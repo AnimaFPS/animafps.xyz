@@ -30,8 +30,8 @@ export default function FovConvert() {
           <meta property="og:site_name" content="Anima's Stuff"/>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
-        <Navbar />
-        <Container className="shadow-sm bg-secondary rounded" style={{paddingBottom: '30px', paddingLeft: '30px', paddingRight: '30px'}}>
+        <Navbar/>
+        <Container className="shadow-sm" style={{paddingBottom: '30px', paddingLeft: '30px', paddingRight: '30px'}}>
           <br/>
           <Typography component="h1" variant="h3" align="center" gutterBottom>
             FOV and Focal Length Scaling Converter/ Calculator

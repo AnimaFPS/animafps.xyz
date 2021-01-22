@@ -1,16 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-import Container from '@material-ui/core/Container'
-import Link from '@material-ui/core/Link'
-import Button from '@material-ui/core/Button'
+import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import { Jumbotron } from 'react-bootstrap'
-import { ThemeProvider } from '@material-ui/core'
+import { ThemeProvider, Button, Card, CardContent, Typography, Grid, Container } from '@material-ui/core'
 import darkTheme from '../lib/theme'
 
 
