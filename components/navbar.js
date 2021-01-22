@@ -3,8 +3,8 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Link from '@material-ui/core/Link'
-import { makeStyles } from '@material-ui/core/styles'
-import { CssBaseline } from '@material-ui/core'
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
+import darkTheme from '../lib/theme'
 
 const useStyles = makeStyles((theme) => ({
     '@global': {
@@ -37,11 +37,11 @@ const navLinks = [
     { title: `blog & articles`, path: `/blog` },
 ]
 
-const Header = () => {
+const Navbar = () => {
     const classes = useStyles();
     return (
         <>
-            <CssBaseline/>
+          <ThemeProvider theme={darkTheme}>
             <AppBar position="static" color="primary" elevation={0} className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
                     <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
@@ -56,7 +56,8 @@ const Header = () => {
                     </nav>
                 </Toolbar>
             </AppBar>
+          </ThemeProvider>
         </>
     )
 }
-export default Header
+export default Navbar

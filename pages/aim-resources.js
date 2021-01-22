@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import {  NavDropdown, Nav , Navbar, Container, Row, Col, Table } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
+import { Navbar, Nav, NavDropdown, Container, Row, Col, Table } from 'react-bootstrap'
 
 export default function aimResources() {
   return (

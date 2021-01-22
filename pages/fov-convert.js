@@ -1,83 +1,58 @@
 import Head from 'next/head'
-import { NavDropdown, Nav , Navbar, Container } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faGithub, faInstagram, faMedium, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { FovConvertForm, FocalLengthForm } from '../lib/fov-convert'
+import { FovConvertForm } from '../lib/fov-convert'
+import Navbar from '../components/navbar'
+import { Container, ThemeProvider, CssBaseline, Typography } from '@material-ui/core'
+import Footer from '../lib/footer'
+import darkTheme from '../lib/theme'
 
 export default function FovConvert() {
   return (
     <>
-      <Head>
-        <title>FOV and Focal Length Scaling Converter/ Calculator</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-        <meta name="description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline/>
+        <Head>
+          <title>FOV and Focal Length Scaling Converter/ Calculator</title>
+          <meta charset="utf-8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+          <meta name="description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="@AnimaFPS"/>
-        <meta name="twitter:title" content="FOV and Focal Length Scaling Converter/ Calculator"/>
-        <meta name="twitter:description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
-        <meta name="twitter:creator" content="@AnimaFPS"/>
-        <meta name="twitter:image" content="http://animafps.vercel.app/images/fov-convert.png"/>
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:site" content="@AnimaFPS"/>
+          <meta name="twitter:title" content="FOV and Focal Length Scaling Converter/ Calculator"/>
+          <meta name="twitter:description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
+          <meta name="twitter:creator" content="@AnimaFPS"/>
+          <meta name="twitter:image" content="http://animafps.vercel.app/images/fov-convert.png"/>
 
-        <meta property="og:title" content="FOV and Focal Length Scaling Converter/ Calculator"/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:url" content="http://animafps.vercel.app/fov-convert/"/>
-        <meta property="og:image" content="http://animafps.vercel.app/images/fov-convert.png"/>
-        <meta property="og:description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
-        <meta property="og:site_name" content="Anima's Stuff"/>
-      </Head>
-      <Navbar bg="primary" variant="dark" expand="lg">
-        <Navbar.Brand>AnimaFPS</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <NavDropdown title="Math and Sens Conversion" active>
-              <NavDropdown.Item href="/fov-convert" active="true">FOV Conversion</NavDropdown.Item>
-              <NavDropdown.Item href="/fpsmath">FPSMath Discord Bot</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Diabotical Stuff">
-              <NavDropdown.Item href="/dbt-callouts">Diabotical 3v3 Map Callouts</NavDropdown.Item>
-              <NavDropdown.Item href="/dbt-glicko">Diabotical OCE Team Ranking</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="/aim-resources">Aim resources</Nav.Link>
-            <Nav.Link href="/blog">Blog & Articles</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-      <Container className="shadow-sm">
-        <br/>
-        <h1>FOV and Focal Length Scaling Converter/ Calculator</h1>
-        <br/>
-        <h2>FOV Conversion</h2>
-        <FovConvertForm/>
-        <p>Here is a fov converter if you want the same equivalent fov in different games or fov types/ratios or just find the true fov, if you don't know the fov of your game use this tool to find it: <a href = "https://www.desmos.com/calculator/3e9hs7usyr">https://www.desmos.com/calculator/3e9hs7usyr</a></p>
-				<h4>The Math Behind</h4>
-        Field of View Conversion:<br/>
-        <code>
-          Output FOV = atan(((Output FOV Ratio)/(Input FOV Ratio)) * tan(oldFOV * PI/360)) * 360/PI
-          when using radians if using degrees then change * 360/pi to * 180
-				</code>
-        <hr/>
-        <h2>Focal Length Scaling</h2>
-        <FocalLengthForm/>
-      </Container>
-      <br/>
-      <footer className="mt-auto py-3 bg-dark">
+          <meta property="og:title" content="FOV and Focal Length Scaling Converter/ Calculator"/>
+          <meta property="og:type" content="article"/>
+          <meta property="og:url" content="http://animafps.vercel.app/fov-convert/"/>
+          <meta property="og:image" content="http://animafps.vercel.app/images/fov-convert.png"/>
+          <meta property="og:description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
+          <meta property="og:site_name" content="Anima's Stuff"/>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        </Head>
+        <Navbar />
         <Container>
-          <span className="text-muted">Anima's Stuff &copy; 2021. All Rights Reserved.</span>
-          <span className="float-right">
-            <a href="https://twitter.com/animafps" aria-label="twitter"><FontAwesomeIcon icon={faTwitter} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitch.tv/animafps" aria-label="twitch"><FontAwesomeIcon icon={faTwitch} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://youtube.com/animafps" aria-label="youtube"><FontAwesomeIcon icon={faYoutube} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://instagram.com/animafps" aria-label="instagram"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://animafps.medium.com" aria-label="medium"><FontAwesomeIcon icon={faMedium} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://discord.com/invite/xJdQxps" aria-label="discord"><FontAwesomeIcon icon={faDiscord} size="lg"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/animafps" aria-label="Github"><FontAwesomeIcon icon={faGithub} size="lg"/></a>
-          </span>
+          <br/>
+          <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+            FOV and Focal Length Scaling Converter/ Calculator
+          </Typography>
+          <br/>
+          <h2>FOV Conversion</h2>
+          <FovConvertForm/>
+          <p>Here is a fov converter if you want the same equivalent fov in different games or fov types/ratios or just find the true fov, if you don't know the fov of your game use this tool to find it: <a href = "https://www.desmos.com/calculator/3e9hs7usyr">https://www.desmos.com/calculator/3e9hs7usyr</a></p>
+          <h4>The Math Behind</h4>
+          Field of View Conversion:<br/>
+          <code>
+            Output FOV = atan(((Output FOV Ratio)/(Input FOV Ratio)) * tan(oldFOV * PI/360)) * 360/PI
+            when using radians if using degrees then change * 360/pi to * 180
+          </code>
+          <hr/>
+          <h2>Focal Length Scaling</h2>
         </Container>
-      </footer>
+        <br/>
+        <Footer/>
+      </ThemeProvider>
     </>
   )
 }
