@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Container, Row, Col, Table } from 'react-bootstrap'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
+import Typography from '@material-ui/core/Typography'
 
 export default function aimResources() {
   return (
@@ -29,7 +30,9 @@ export default function aimResources() {
     <Navbar />
       <Container>
         <br></br>
-        <h1>Aggregated Aiming Resources</h1>
+        <Typography component="h1" variant="h3" align="center" gutterBottom>
+            Aggregated Aiming Resources
+        </Typography>
         <p><b>Bold</b> are recommended resources</p>
         <p>if you want to submit a resource that should be on this list please <a href="https://forms.gle/frYCiMGLtmHQCP1z8">submit a form</a></p>
         <p><a href="https://www.reddit.com/r/FPSAimTrainer/comments/hmngov/every_aiming_resources_in_a_aggregated_list/">Link to Reddit post</a></p>

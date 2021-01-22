@@ -3,7 +3,6 @@ import Router from 'next/router'
 import NProgress from 'nprogress'
 import '../styles/bootstrap.min.css'
 import '../styles/nprogress.css'
-import 'fontsource-roboto'
 
 Router.events.on('routeChangeStart', (url) => {
   console.log(`Loading: ${url}`)
@@ -17,6 +16,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
       </Head>
       <Component {...pageProps}/>
     </>

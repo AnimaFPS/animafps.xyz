@@ -50,10 +50,15 @@ export default function Home() {
             </div>
           </Container>
         </Jumbotron>
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <Grid container spacing={4}>
-            <Grid item xs={12} sm={6} md={5}>
-                <Card className="shadow-sm">
+            <Grid item xs={12} sm={6} md={4}>
+                <Card 
+                  style={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column'
+                  }}>
                   <Link href="/fpsmath">
                     <a>
                       <Image
@@ -80,15 +85,20 @@ export default function Home() {
                   </CardContent>
                 </Card>
               </Grid>
-              <Grid item xs={12} sm={6} md={5}>
-                <Card>
+              <Grid item xs={12} sm={6} md={4}>
+                <Card 
+                  style={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column'
+                  }}>
                   <Link href="/fov-convert">
                     <a>
                       <Image
                         src="/images/fov-convert.png"
                         alt="fov-convert"
-                        width={1246}
-                        height={878}
+                        width={1779}
+                        height={890}
                         sizes="20vw"
                         layout="responsive"
                       />
@@ -104,6 +114,72 @@ export default function Home() {
                     </Link>
                     <Typography>
                       A Discord bot designed to convert sensitivities, fovs, mouse feel across themselves and preset games
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Card 
+                  style={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column'
+                  }}>
+                  <Link href="/dbt-glicko">
+                    <a>
+                      <Image
+                        src="/images/dbt-glicko.png"
+                        alt="dbt-glicko"
+                        width={1333}
+                        height={884}
+                        sizes="20vw"
+                        layout="responsive"
+                      />
+                    </a>
+                  </Link>
+                  <CardContent>
+                    <Link href="/dbt-glicko">
+                      <a>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          OCE Diabotical Team Rankings
+                        </Typography>
+                      </a>
+                    </Link>
+                    <Typography>
+                      An implementation of the Glicko2 rating system to rank the Oceania Diabotical competitive teams
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Card 
+                  style={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column'
+                  }}>
+                  <Link href="/aim-resources">
+                    <a>
+                      <Image
+                        src="/images/aim-resources.png"
+                        alt="aim-resources"
+                        width={1710}
+                        height={901}
+                        sizes="20vw"
+                        layout="responsive"
+                      />
+                    </a>
+                  </Link>
+                  <CardContent>
+                    <Link href="/aim-resources">
+                      <a>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          Aggregated Aiming Resources
+                        </Typography>
+                      </a>
+                    </Link>
+                    <Typography>
+                      Big aggregated sheet of every Aiming Resource ever made including guides general and specific routines, videos and more
                     </Typography>
                   </CardContent>
                 </Card>
