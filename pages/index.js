@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
-        <CssBaseline/>
       <Head>
         <title>Anima's Stuff</title>
         <meta name="description" content="Homepage for Anima's website"/>

@@ -3,6 +3,7 @@ import Router from 'next/router'
 import NProgress from 'nprogress'
 import '../styles/bootstrap.min.css'
 import '../styles/nprogress.css'
+import 'fontsource-roboto'
 
 Router.events.on('routeChangeStart', (url) => {
   console.log(`Loading: ${url}`)
