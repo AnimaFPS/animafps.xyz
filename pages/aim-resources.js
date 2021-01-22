@@ -296,7 +296,6 @@ export default function aimResources() {
         <p>Feedback very welcome to improve this sheet just DM me or reply on the reddit post</p> 
       </Container>
       <Footer />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
    </>
   )
 }

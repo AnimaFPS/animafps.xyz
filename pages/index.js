@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import { Jumbotron } from 'react-bootstrap'
-import { ThemeProvider, Button, Card, CardContent, Typography, Grid, Container } from '@material-ui/core'
+import { ThemeProvider, Button, Card, CardContent, Typography, Grid, Container, CssBaseline } from '@material-ui/core'
 import darkTheme from '../lib/theme'
 
 
@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
+        <CssBaseline/>
       <Head>
         <title>Anima's Stuff</title>
         <meta name="description" content="Homepage for Anima's website"/>
@@ -113,7 +114,6 @@ export default function Home() {
         <br/>
         <Footer/>
         </ThemeProvider>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     </>
   )
 }

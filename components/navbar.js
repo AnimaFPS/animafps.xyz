@@ -7,16 +7,6 @@ import NextLink from 'next/link'
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import darkTheme from '../lib/theme'
 
-const useStyles = makeStyles((theme) => ({
-    '@global': {
-      ul: {
-        margin: 0,
-        padding: 0,
-        listStyle: 'none',
-      },
-    },
-  }));
-
 const navLinks = [
     { title: `home`, path: `/` },
     { title: `fov convert`, path: `/fov-convert` },
@@ -27,7 +17,6 @@ const navLinks = [
 ]
 
 const Navbar = () => {
-    const classes = useStyles();
     return (
         <>
           <ThemeProvider theme={darkTheme}>

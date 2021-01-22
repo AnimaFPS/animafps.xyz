@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Router from 'next/router'
-import NProgress from 'nprogress';
+import NProgress from 'nprogress'
 import '../styles/bootstrap.min.css'
 import '../styles/nprogress.css'
 
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
       </Head>
-      <Component {...pageProps} />
+      <Component {...pageProps}/>
     </>
   )
 }
