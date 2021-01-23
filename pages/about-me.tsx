@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
+import Head from "next/head";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 
 export default function aboutMe() {
   return (
@@ -9,7 +9,7 @@ export default function aboutMe() {
         <title>About Me</title>
       </Head>
       <Navbar path="/about-me" />
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }
