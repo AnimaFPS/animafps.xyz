@@ -12,6 +12,13 @@ import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from '@material-ui/core/Drawer'
 import { List, ListItem } from '@material-ui/core'
 
+interface IProps {
+  path?: string;
+}
+
+interface IState {
+  top?: boolean;
+}
 
 const navLinks = [
     { title: `Home`, path: `/` },
@@ -21,8 +28,8 @@ const navLinks = [
     { title: `Aim Resources`, path: `/aim-resources`},
     { title: `Blog & Articles`, path: `/blog` },
 ]
-export class Navbar extends React.Component {
-  constructor(props) {
+export class Navbar extends React.Component<IProps, IState> {
+  constructor(props:any) {
     super(props);
     this.state = {
         top: false,
@@ -34,7 +41,7 @@ export class Navbar extends React.Component {
     this.setState({top: !this.state.top});
   };
 
-  checkPageLink = (title, path) => {
+  checkPageLink = (title:string, path:string) => {
     if (path === this.props.path) {
       return (<NextLink href={path} key={title}>
         <Link component="button" variant="button" style={{marginRight: "10px"}} className="text-success">
@@ -56,7 +63,7 @@ export class Navbar extends React.Component {
           <ThemeProvider theme={darkTheme}>
             <AppBar position="static" color="primary" elevation={0}>
                 <Toolbar style={{flexWrap: 'wrap'}}>
-                    <Typography variant="h6" color="inherit" noWrap style={{flexGrow: '1'}}>
+                    <Typography variant="h6" color="inherit" noWrap style={{flexGrow: 1}}>
                         AnimaFPS
                     </Typography>
                     <Hidden smDown>
@@ -75,7 +82,7 @@ export class Navbar extends React.Component {
                           <List>
                             {navLinks.map(({ title, path }) => (
                             <NextLink href={path} key={title}>
-                              <ListItem button>
+                              <ListItem button className="link">
                                 {title}
                               </ListItem>
                             </NextLink>

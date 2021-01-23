@@ -2,8 +2,15 @@ import React from 'react'
 import { atan, tan, pi } from 'mathjs'
 import { Row, Col, Jumbotron,  } from 'react-bootstrap'
 import { TextField, MenuItem } from '@material-ui/core'
-export class FovConvertForm extends React.Component {
-    constructor(props) {
+
+interface IState {
+  ifovt?: string;
+  ofovt?: string;
+  ifov?: string;
+}
+
+export class FovConvertForm extends React.Component<IState> {
+    constructor(props:any) {
       super(props);
       this.state = {
           ifovt: "null",
@@ -11,9 +18,12 @@ export class FovConvertForm extends React.Component {
           ifov: "null"
       };
     }
-    myChangeHandler = (event) => {
+    myChangeHandler = (event:any) => {
         let nam = event.target.name;
         let val = event.target.value;
+        if (val === "hFOV") {
+
+        }
         this.setState({[nam]: val});
     }
 
@@ -36,6 +46,7 @@ export class FovConvertForm extends React.Component {
                       <MenuItem value="0.5625">16:9 hFOV (OW, Val, QC)</MenuItem>
                       <MenuItem value="0.75">4:3 hFOV (Source, Quake)</MenuItem>
                       <MenuItem value="1">vFOV (R6, OW(ads))</MenuItem>
+                      <MenuItem value="hFOV">hFOV (Custom/Other)</MenuItem>
                     </TextField>
                   </div>
                   <br/>
@@ -51,7 +62,13 @@ export class FovConvertForm extends React.Component {
                       <MenuItem value="0.5625">16:9 hFOV (OW, Val, QC)</MenuItem>
                       <MenuItem value="0.75">4:3 hFOV (Source, Quake)</MenuItem>
                       <MenuItem value="1">vFOV (R6, OW(ads))</MenuItem>
+                      <MenuItem value="hFOV">hFOV (Custom/Other)</MenuItem>
                     </TextField>
+                  </div>
+                  <div style={{display: "none"}}>
+                    <br/>
+                      
+                    <br/>
                   </div>
                   <br/>
                   <div>
@@ -62,7 +79,6 @@ export class FovConvertForm extends React.Component {
                       onChange={this.myChangeHandler}
                       fullWidth
                       type="number"
-                      min="0"
                       max="180"
                       step="any"
                     />
@@ -89,7 +105,7 @@ export class FovConvertForm extends React.Component {
     }
   }
   export class FocalLengthForm extends React.Component {
-    constructor(props) {
+    constructor(props:any) {
       super(props);
       this.state = {
           ifov: "null",
@@ -97,7 +113,7 @@ export class FovConvertForm extends React.Component {
           sens: "null"
       };
     }
-    myChangeHandler = (event) => {
+    myChangeHandler = (event:any) => {
         let nam = event.target.name;
         let val = event.target.value;
         this.setState({[nam]: val});

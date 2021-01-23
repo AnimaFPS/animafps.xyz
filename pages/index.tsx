@@ -164,8 +164,8 @@ export default function Home() {
                       <Image
                         src="/images/aim-resources.png"
                         alt="aim-resources"
-                        width={1710}
-                        height={901}
+                        width={1797}
+                        height={898}
                         sizes="20vw"
                         layout="responsive"
                       />
