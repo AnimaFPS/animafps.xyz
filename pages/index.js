@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -20,15 +21,15 @@ export default function Home() {
         <meta content="Anima's Stuff" name="twitter:title"/>
         <meta content="Homepage for Anima's website" name="twitter:description"/>
         <meta content="@AnimaFPS" name="twitter:creator"/>
-        <meta content="https://animafps.github.io/Screenshot.png" name="twitter:image"/>
+        <meta content="https://animafps.vercel.app/Index.png" name="twitter:image"/>
         <meta content="Anima's Stuff" property="og:title"/>
         <meta content="article" property="og:type"/>
-        <meta content="http://animafps.github.io" property="og:url"/>
-        <meta content="https://animafps.github.io/Screenshot.png" property="og:image"/>
+        <meta content="http://animafps.vercel.app" property="og:url"/>
+        <meta content="https://animafps.vercel.app/Index.png" property="og:image"/>
         <meta content="Homepage for Anima's website" property="og:description"/>
         <meta content="Anima's Stuff" property="og:site_name"/>
       </Head>
-      <Navbar />
+      <Navbar path="/"/>
         <Jumbotron>
           <Container maxWidth="md" >
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>

@@ -8,7 +8,7 @@ export default function blog() {
         <Head>
           <title>blog</title>
         </Head>
-        <Navbar />
+        <Navbar path="/blog"/>
         <Footer />
     </>
   )

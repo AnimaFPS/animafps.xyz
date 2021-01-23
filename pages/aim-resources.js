@@ -10,7 +10,6 @@ export default function aimResources() {
     <>
     <Head>
         <title>Aggregated Aiming Resources By Anima</title>
-        <meta charset="utf-8"/>
         <meta name="description" content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
@@ -27,7 +26,7 @@ export default function aimResources() {
         <meta property="og:description" content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"/>
         <meta property="og:site_name" content="Anima's Stuff"/>
     </Head>
-    <Navbar />
+    <Navbar path="/aim-resources"/>
       <Container>
         <br></br>
         <Typography component="h1" variant="h3" align="center" gutterBottom>

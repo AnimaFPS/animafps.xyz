@@ -3,6 +3,7 @@ import Router from 'next/router'
 import NProgress from 'nprogress'
 import '../styles/bootstrap.min.css'
 import '../styles/nprogress.css'
+import '../styles/linkhover.css'
 
 Router.events.on('routeChangeStart', (url) => {
   console.log(`Loading: ${url}`)
