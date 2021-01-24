@@ -12,11 +12,10 @@ import {
   Typography,
   Grid,
   Container,
-  CssBaseline,
 } from "@material-ui/core";
 import darkTheme from "../lib/theme";
 
-export default function Home() {
+export default function Home():JSX.Element {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
@@ -48,7 +47,7 @@ export default function Home() {
           />
           <meta content="Anima's Stuff" property="og:site_name" />
         </Head>
-        <Navbar path="/" />
+        <Navbar url="/" />
         <Jumbotron>
           <Container maxWidth="md">
             <Typography

@@ -2,13 +2,13 @@ import Head from "next/head";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 
-export default function aboutMe() {
+export default function aboutMe():JSX.Element {
   return (
     <>
       <Head>
         <title>About Me</title>
       </Head>
-      <Navbar path="/about-me" />
+      <Navbar url="/about-me" />
       <Footer />
     </>
   );

@@ -6,7 +6,7 @@ import Navbar from "../components/navbar";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 
-export default function aimResources() {
+export default function aimResources():JSX.Element {
   return (
     <>
       <Head>
@@ -48,9 +48,9 @@ export default function aimResources() {
         />
         <meta property="og:site_name" content="Anima's Stuff" />
       </Head>
-      <Navbar path="/aim-resources" />
+      <Navbar url="/aim-resources" />
       <Container>
-        <br></br>
+        <br/>
         <Typography component="h1" variant="h3" align="center" gutterBottom>
           Aggregated Aiming Resources
         </Typography>

@@ -13,7 +13,7 @@ Router.events.on("routeChangeStart", (url) => {
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps):JSX.Element {
   return (
     <>
       <Head>
@@ -24,8 +24,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          crossOrigin="anonymous"
         />
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7c5eafe470574c96b45657d10bcf5a2b"}'></script>
       </Head>
       <Component {...pageProps} />
     </>

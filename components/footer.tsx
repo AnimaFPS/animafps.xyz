@@ -10,8 +10,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Footer = () => {
-  return (
+const Footer = ():JSX.Element => {
+  return <>
     <footer className="mt-auto py-3 bg-dark">
       <Container>
         <Row>
@@ -54,7 +54,7 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
-  );
+  </>;
 };
 
 export default Footer;

@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import { FovConvertForm, FocalLengthForm } from '../lib/fov-convert'
+import { FovConvertForm, FocalLengthForm } from '../components/fov-convert'
 import Navbar from '../components/navbar'
 import { ThemeProvider, Typography, Container } from '@material-ui/core'
 import Footer from '../components/footer'
 import darkTheme from '../lib/theme'
 
-export default function FovConvert() {
+export default function FovConvert():JSX.Element {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
@@ -28,7 +28,7 @@ export default function FovConvert() {
           <meta property="og:description" content="A Calculator to convert different fov values to others per the fov aspect ratio"/>
           <meta property="og:site_name" content="Anima's Stuff"/>
         </Head>
-        <Navbar path="/fov-convert"/>
+        <Navbar url="/fov-convert"/>
         <Container className="shadow-sm" style={{paddingBottom: '30px', paddingLeft: '30px', paddingRight: '30px'}}>
           <br/>
           <Typography component="h1" variant="h3" align="center" gutterBottom>

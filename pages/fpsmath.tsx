@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function fpsMath() {
+export default function fpsMath():JSX.Element {
   return (
     <Head>
       <title>FPSMath Bot</title>

@@ -1,15 +1,15 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
-export default function blog() {
+export default function blog():JSX.Element {
   return (
     <>
       <Head>
         <title>blog</title>
       </Head>
-      <Navbar path="/blog" />
-      <Footer />
+      <meta
+        http-equiv="Refresh"
+        content="0; url='https://animafps.medium.com'"
+      />
     </>
   );
 }
