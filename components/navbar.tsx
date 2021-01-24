@@ -26,14 +26,7 @@ export default function Navbar({ url }: { url: string }): JSX.Element {
     top: false,
   });
 
-  const toggleDrawer = (anchor: string, open: boolean) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-
+  const toggleDrawer = (anchor: string, open: boolean) => () => {
     setState({ ...state, [anchor]: open });
   };
   return (
