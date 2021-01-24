@@ -2,11 +2,10 @@ import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
 import { AppProps } from "next/app";
-import "normalize.css"
+import "normalize.css";
 import "../styles/bootstrap.min.css";
 import "../styles/nprogress.css";
 import "../styles/linkhover.css";
-
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
@@ -27,6 +26,8 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          integrity="sha384-1l4KI/+00FE4A8k5/jea0GWaPvdV49ggBzQKj3AN8AtbzQTgAgb9jz8hE3v52YfG"
+          crossorigin="anonymous"
         />
         <script
           defer
