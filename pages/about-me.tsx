@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Typography from "@material-ui/core/Typography/Typography"
 
 export default function aboutMe(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function aboutMe(): JSX.Element {
         <meta property="og:gender" content="male" />
       </Head>
       <Navbar url="/about-me" />
+      <Typography align="center">Coming Soon</Typography>
       <Footer sticky={true}/>
     </>
   );

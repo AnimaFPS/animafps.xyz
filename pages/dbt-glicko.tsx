@@ -29,6 +29,7 @@ export default function dbtGlicko():JSX.Element {
         <Typography component="h1" variant="h3" align="center" gutterBottom>
           OCE DBT Team Rankings
         </Typography>
+        <Typography align="center">Coming Soon</Typography>
       </Container>
       <Footer sticky />
     </>

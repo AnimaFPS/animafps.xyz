@@ -31,14 +31,14 @@ export default function Home(): JSX.Element {
           />
           <meta content="@AnimaFPS" name="twitter:creator" />
           <meta
-            content="https://animafps.xyz/Index.png"
+            content="https://images.unsplash.com/photo-1610505466122-b1d9482901ef"
             name="twitter:image"
           />
           <meta content="Anima's Stuff" property="og:title" />
           <meta content="website" property="og:type" />
           <meta content="https://animafps.xyz" property="og:url" />
           <meta
-            content="https://animafps.xyz/Index.png"
+            content="https://images.unsplash.com/photo-1610505466122-b1d9482901ef"
             property="og:image"
           />
           <meta
