@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       <Head>
         <meta
           name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
         <meta name="referrer" content="none-when-downgrade" />
         <link
@@ -34,11 +34,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           src="https://static.cloudflareinsights.com/beacon.min.js"
           data-cf-beacon='{"token": "7c5eafe470574c96b45657d10bcf5a2b"}'
         ></script>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link
           rel="icon"
           type="image/png"
