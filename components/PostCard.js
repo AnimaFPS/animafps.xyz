@@ -11,8 +11,6 @@ import {
   CardContent,
   Typography,
   Grid,
-  Badge,
-  withStyles,
   Link,
   CardActions,
   Divider,
@@ -76,38 +74,6 @@ const styles = makeStyles((muiBaseTheme) => ({
   }
 }));
 
-const StyledBadge = withStyles((theme) => ({
-  badge: {
-    display: "flex",
-    backgroundColor: "#44b700",
-    color: "#44b700",
-    boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-    bottom: -131,
-
-    "&::after": {
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      borderRadius: "50%",
-      animation: "$ripple 1.2s infinite ease-in-out",
-      border: "1px solid currentColor",
-      content: '""',
-    },
-  },
-  "@keyframes ripple": {
-    "0%": {
-      transform: "scale(.8)",
-      opacity: 1,
-    },
-    "100%": {
-      transform: "scale(2.4)",
-      opacity: 0,
-    },
-  },
-}))(Badge);
-
 export default function MediumCard(props) {
   const classes = styles();
   const monthShortname = [
@@ -134,39 +100,13 @@ export default function MediumCard(props) {
     "," +
     " " +
     splitMonth[0];
-  const d = new Date();
 
   return (
     <Grid item xs={12} sm={12} lg={4} className={classes.grid}>
       <Card className={classes.card}>
         <CardMedia className={classes.media} image={props.thumbnail}>
-          {d.getHours() >= 5 && d.getHours() <= 20 ? (
-            <StyledBadge
-              overlap="circle"
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "right",
-              }}
-              variant="dot"
-              style={{
-                display: "inline-block",
-                alignItems: "center",
-                marginLeft: "1.5625rem",
-              }}
-            >
-              <Avatar
-                alt="sabesan sathananthan"
-                className={classes.avatar}
-                src={props.avatar}
-                component="a"
-                varient="rounded"
-                href={props.profilelink}
-                target="_blank"
-              />
-            </StyledBadge>
-          ) : (
             <Avatar
-              alt="sabesan sathananthan"
+              alt="Anima"
               className={classes.avatar}
               src={props.avatar}
               component="a"
@@ -179,7 +119,6 @@ export default function MediumCard(props) {
               href={props.profilelink}
               target="_blank"
             />
-          )}
         </CardMedia>
         <CardContent
           className={classes.content}
