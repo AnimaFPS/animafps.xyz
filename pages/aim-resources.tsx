@@ -75,7 +75,7 @@ export default function aimResources():JSX.Element {
           justify="center"
           alignItems="center"
         >
-          <Grid item xs={10}>
+          <Grid item xs={11}>
           <Table bordered responsive="md" className="shadow-sm">
             <thead
               className="thead-dark"
@@ -817,14 +817,14 @@ export default function aimResources():JSX.Element {
               <tr>
                 <td className="align-middle">
                   <a
-                    href="https://www.youtube.com/watch?v=A6mm_I57Ulo"
+                    href="https://www.youtube.com/playlist?list=PLSp3kVF_HRAcVFECtN8U0JB1ENFTUAojp"
                     className="text-reset"
                   >
-                    Properly Using KovaaK's To Improve | Sensitivity
+                    Properly Using KovaaK's to Improve series
                   </a>
                 </td>
                 <td className="align-middle">
-                  Finding a sensitivity that works for you
+                A good and basic series introduction into aiming and kovaaks concepts with videos incuding(Setting up Kovaaks, Training Properly, Benchmarks and Routines, Sensitivites)
                 </td>
                 <td className="align-middle">
                   <a

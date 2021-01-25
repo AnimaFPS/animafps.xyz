@@ -78,7 +78,7 @@ export default function FovConvert(): JSX.Element {
               https://www.desmos.com/calculator/3e9hs7usyr
             </a>
           </p>
-          <h4>The Math Behind</h4>
+          <h3>The Math Behind</h3>
           Field of View Conversion:
           <br />
           <code>

@@ -1,4 +1,9 @@
+import { Container, ThemeProvider } from "@material-ui/core";
 import Head from "next/head";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+import Slider from "../components/Slider"
+import Theme from "../lib/theme"
 
 export default function blog():JSX.Element {
   return (
@@ -6,10 +11,14 @@ export default function blog():JSX.Element {
       <Head>
         <title>blog</title>
       </Head>
-      <meta
-        http-equiv="Refresh"
-        content="0; url='https://animafps.medium.com'"
-      />
+      <Navbar url="/blog"/>
+      <Container>
+        <ThemeProvider theme={Theme}>
+          <Slider/>
+        </ThemeProvider>
+      </Container>
+      <br/>
+      <Footer/>
     </>
   );
 }
