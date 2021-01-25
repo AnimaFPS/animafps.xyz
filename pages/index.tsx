@@ -15,18 +15,18 @@ import {
 } from "@material-ui/core";
 import darkTheme from "../lib/theme";
 
-export default function Home():JSX.Element {
+export default function Home(): JSX.Element {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
         <Head>
           <title>Anima's Stuff</title>
-          <meta name="description" content="Homepage for Anima's website" />
+          <meta name="description" content="Cool Things for FPS's and Random projects" />
           <meta content="summary_large_image" name="twitter:card" />
           <meta content="@AnimaFPS" name="twitter:site" />
           <meta content="Anima's Stuff" name="twitter:title" />
           <meta
-            content="Homepage for Anima's website"
+            content="Cool Things for FPS's and Random projects"
             name="twitter:description"
           />
           <meta content="@AnimaFPS" name="twitter:creator" />
@@ -35,17 +35,19 @@ export default function Home():JSX.Element {
             name="twitter:image"
           />
           <meta content="Anima's Stuff" property="og:title" />
-          <meta content="article" property="og:type" />
+          <meta content="website" property="og:type" />
           <meta content="http://animafps.vercel.app" property="og:url" />
           <meta
             content="https://animafps.vercel.app/Index.png"
             property="og:image"
           />
           <meta
-            content="Homepage for Anima's website"
+            content="Cool Things for FPS's and Random projects"
             property="og:description"
           />
           <meta content="Anima's Stuff" property="og:site_name" />
+          <link rel="canonical" href="http://animafps.vercel.app" />
+          
         </Head>
         <Navbar url="/" />
         <Jumbotron>
