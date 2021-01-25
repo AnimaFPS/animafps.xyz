@@ -25,8 +25,6 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          integrity="sha384-1l4KI/+00FE4A8k5/jea0GWaPvdV49ggBzQKj3AN8AtbzQTgAgb9jz8hE3v52YfG"
-          crossOrigin="anonymous"
         />
         <script
           defer
