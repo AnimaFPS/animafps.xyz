@@ -28,11 +28,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           integrity="sha384-1l4KI/+00FE4A8k5/jea0GWaPvdV49ggBzQKj3AN8AtbzQTgAgb9jz8hE3v52YfG"
           crossOrigin="anonymous"
         />
-        <script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "7c5eafe470574c96b45657d10bcf5a2b"}'
-        ></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5794384393f24cc8ac62abdc1bd942ba"}'></script>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link
           rel="icon"
