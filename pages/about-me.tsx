@@ -12,7 +12,7 @@ export default function aboutMe(): JSX.Element {
         <meta property="og:gender" content="male" />
       </Head>
       <Navbar url="/about-me" />
-      <Footer />
+      <Footer sticky={true}/>
     </>
   );
 }

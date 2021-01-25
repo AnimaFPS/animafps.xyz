@@ -33,7 +33,7 @@ export default function FovConvert(): JSX.Element {
           <meta name="twitter:creator" content="@AnimaFPS" />
           <meta
             name="twitter:image"
-            content="http://animafps.vercel.app/images/fov-convert.png"
+            content="https://animafps.xyz/images/fov-convert.png"
           />
 
           <meta
@@ -43,11 +43,11 @@ export default function FovConvert(): JSX.Element {
           <meta content="website" property="og:type" />
           <meta
             property="og:url"
-            content="http://animafps.vercel.app/fov-convert/"
+            content="https://animafps.xyz/fov-convert/"
           />
           <meta
             property="og:image"
-            content="http://animafps.vercel.app/images/fov-convert.png"
+            content="https://animafps.xyz/images/fov-convert.png"
           />
           <meta
             property="og:description"

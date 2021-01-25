@@ -1,7 +1,7 @@
 import React from "react";
 import ShortenText from "../utils/ShortenText";
 import ToText from "../utils/ToText";
-import { faUser, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   makeStyles,
@@ -71,6 +71,9 @@ const styles = makeStyles((muiBaseTheme) => ({
       marginLeft: -muiBaseTheme.spacing(),
     },
   },
+  footer: {
+    height: "30px"
+  }
 }));
 
 const StyledBadge = withStyles((theme) => ({
@@ -182,7 +185,7 @@ export default function MediumCard(props) {
           className={classes.content}
           style={{
             paddingTop: "2.1875rem",
-            minHeight: "120px",
+            minHeight: "160px",
             paddingBottom: "0",
           }}
         >
@@ -202,34 +205,20 @@ export default function MediumCard(props) {
         </CardContent>
         <Divider className={classes.divider} />
         <CardActions
-          style={{ paddingLeft: "1.5625rem", paddingRight: "1.5625rem" }}
+          style={{ paddingLeft: "1.5625rem", paddingRight: "1.5625rem" }} className={classes.footer}
         >
           <Grid>
-            <Typography
-              style={{
-                fontSize: "14px",
-                color: "#212529",
-              }}
-              display="block"
-              variant="body1"
-              gutterBottom
-            >
-              <FontAwesomeIcon icon={faUser}/> {props.author}
-            </Typography>
-          </Grid>
-          <Grid>
-            <Typography
-              display="block"
-              variant="body1"
-              style={{
-                fontSize: "14px",
-                color: "#868e96",
-                display: "inline-block",
-              }}
-              gutterBottom
-            >
-              <FontAwesomeIcon icon={faCalendarAlt}/> {finalDate}
-            </Typography>
+              <Typography
+                display="block"
+                variant="body1"
+                style={{
+                  fontSize: "14px",
+                  color: "#868e96",
+                  display: "inline-block"
+                }}
+              >
+                <FontAwesomeIcon icon={faCalendarAlt} width="14px"/> {finalDate}
+              </Typography>
           </Grid>
         </CardActions>
       </Card>

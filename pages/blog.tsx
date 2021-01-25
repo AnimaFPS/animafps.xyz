@@ -12,13 +12,12 @@ export default function blog():JSX.Element {
         <title>blog</title>
       </Head>
       <Navbar url="/blog"/>
-      <Container>
+      <Container maxWidth="lg">
         <ThemeProvider theme={Theme}>
           <Slider/>
         </ThemeProvider>
       </Container>
-      <br/>
-      <Footer/>
+      <Footer sticky={true}/>
     </>
   );
 }

@@ -30,7 +30,7 @@ export default function aimResources():JSX.Element {
         <meta name="twitter:creator" content="@AnimaFPS" />
         <meta
           name="twitter:image"
-          content="https://animafps.github.io/aim-resources/Screenshot.png"
+          content="https://animafps.xyz/aim-resources.png"
         />
 
         <meta
@@ -38,10 +38,10 @@ export default function aimResources():JSX.Element {
           content="Aggregated Aiming Resources By Anima"
         />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://animafps.github.io/" />
+        <meta property="og:url" content="https://animafps.xyz/" />
         <meta
           property="og:image"
-          content="https://animafps.github.io/aim-resources/Screenshot.png"
+          content="https://animafps.xyz/aim-resources.png"
         />
         <meta
           property="og:description"
@@ -1036,7 +1036,7 @@ export default function aimResources():JSX.Element {
           reddit post
         </p>
       </Container>
-      <Footer />
+      <Footer/>
     </>
   );
 }

@@ -31,14 +31,14 @@ export default function Home(): JSX.Element {
           />
           <meta content="@AnimaFPS" name="twitter:creator" />
           <meta
-            content="https://animafps.vercel.app/Index.png"
+            content="https://animafps.xyz/Index.png"
             name="twitter:image"
           />
           <meta content="Anima's Stuff" property="og:title" />
           <meta content="website" property="og:type" />
-          <meta content="http://animafps.vercel.app" property="og:url" />
+          <meta content="https://animafps.xyz" property="og:url" />
           <meta
-            content="https://animafps.vercel.app/Index.png"
+            content="https://animafps.xyz/Index.png"
             property="og:image"
           />
           <meta
@@ -46,7 +46,7 @@ export default function Home(): JSX.Element {
             property="og:description"
           />
           <meta content="Anima's Stuff" property="og:site_name" />
-          <link rel="canonical" href="http://animafps.vercel.app" />
+          <link rel="canonical" href="https://animafps.xyz" />
           
         </Head>
         <Navbar url="/" />

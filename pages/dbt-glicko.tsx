@@ -15,11 +15,11 @@ export default function dbtGlicko():JSX.Element {
         <meta name="twitter:title" content="OCE Diabotical Team Rankings"/>
         <meta name="twitter:description" content="Implementation of the Glicko2 rating system to rank the Oceania Diabotical competitive teams"/>
         <meta name="twitter:creator" content="@AnimaFPS"/>
-        <meta name="twitter:image" content="https://animafps.vercel.app/dbt-glicko.png"/>
+        <meta name="twitter:image" content="https://animafps.xyz/dbt-glicko.png"/>
         <meta property="og:title" content="OCE DBT Team Rankings"/>
         <meta property="og:type" content="article"/>
-        <meta property="og:url" content="https://animafps.vercel.app/dbt-glicko"/>
-        <meta property="og:image" content="https://animafps.vercel.app/dbt-glicko.png"/>
+        <meta property="og:url" content="https://animafps.xyz/dbt-glicko"/>
+        <meta property="og:image" content="https://animafps.xyz/dbt-glicko.png"/>
         <meta property="og:description" content="Implementation of the Glicko2 rating system to rank the Oceania Diabotical competitive teams"/>
         <meta property="og:site_name" content="Anima's Stuff"/>
       </Head>
@@ -30,7 +30,7 @@ export default function dbtGlicko():JSX.Element {
           OCE DBT Team Rankings
         </Typography>
       </Container>
-      <Footer />
+      <Footer sticky />
     </>
   );
 }
