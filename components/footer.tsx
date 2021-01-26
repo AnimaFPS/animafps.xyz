@@ -34,7 +34,7 @@ const Footer = ({ sticky }: { sticky?: boolean }):JSX.Element => {
             </Col>
             <Col>
               <span className="float-right">
-                <a href="https://twitter.com/animafps" aria-label="twitter">
+                <a href="https://twitter.com/AnimaFPS" aria-label="twitter">
                   <FontAwesomeIcon icon={faTwitter} size="lg" width="20px" />
                 </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
