@@ -1,5 +1,6 @@
 import { Button, Container, Grid, Typography } from "@material-ui/core";
 import Head from "next/head";
+import Link from "next/link"
 
 export default function links(): JSX.Element {
   return (
@@ -27,21 +28,22 @@ export default function links(): JSX.Element {
             style={{
               paddingTop: "15%",
             }}
-            spacing={3}
+            spacing={2}
           >
             <Typography component="h1" variant="h3" align="center" gutterBottom>
               AnimaFPS
             </Typography>
             <Grid item>
-              <Button
-                color="primary"
-                variant="contained"
-                href="https://animafps.xyz"
-                size="large"
-                fullWidth={true}
-              >
-                Website
-              </Button>
+              <Link href="/">
+                <Button
+                  color="primary"
+                  variant="contained"
+                  size="large"
+                  fullWidth={true}
+                >
+                  Website
+                </Button>
+              </Link>
             </Grid>
             <Grid item>
               <Button
