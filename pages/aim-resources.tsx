@@ -30,7 +30,7 @@ export default function aimResources():JSX.Element {
         <meta name="twitter:creator" content="@AnimaFPS" />
         <meta
           name="twitter:image"
-          content="https://animafps.xyz/aim-resources.png"
+          content="https://animafps.xyz/images/aim-resources.png"
         />
 
         <meta
@@ -41,7 +41,7 @@ export default function aimResources():JSX.Element {
         <meta property="og:url" content="https://animafps.xyz/" />
         <meta
           property="og:image"
-          content="https://animafps.xyz/aim-resources.png"
+          content="https://animafps.xyz/images/aim-resources.png"
         />
         <meta
           property="og:description"
