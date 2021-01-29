@@ -1,13 +1,15 @@
 import { Button, Container, Grid, Typography } from "@material-ui/core";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Link from "next/link"
 
 export default function links(): JSX.Element {
   return (
     <>
-      <Head>
-        <title>AnimaFPS - Links</title>
-      </Head>
+      <NextSeo
+          title="AnimaFPS - Links"
+          description="Links to Anima's Social Media"
+          canonical="https://animafps.xyz/links"
+      />
       <div
         style={{
           backgroundImage: "url(https://source.unsplash.com/collection/1368747)",

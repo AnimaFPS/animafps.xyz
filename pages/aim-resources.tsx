@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 import { Table } from "react-bootstrap";
 import Footer from "../components/footer";
@@ -10,45 +10,18 @@ import Grid from "@material-ui/core/Grid"
 export default function aimResources():JSX.Element {
   return (
     <>
-      <Head>
-        <title>Aggregated Aiming Resources By Anima</title>
-        <meta
-          name="description"
-          content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@AnimaFPS" />
-        <meta
-          name="twitter:title"
-          content="Aggregated Aiming Resources By Anima"
-        />
-        <meta
-          name="twitter:description"
-          content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"
-        />
-        <meta name="twitter:creator" content="@AnimaFPS" />
-        <meta
-          name="twitter:image"
-          content="https://animafps.xyz/images/aim-resources.png"
-        />
-
-        <meta
-          property="og:title"
-          content="Aggregated Aiming Resources By Anima"
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://animafps.xyz/" />
-        <meta
-          property="og:image"
-          content="https://animafps.xyz/images/aim-resources.png"
-        />
-        <meta
-          property="og:description"
-          content="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"
-        />
-        <meta property="og:site_name" content="Anima's Stuff" />
-      </Head>
+      <NextSeo
+        title="Aggregated Aiming Resources By Anima"
+        description="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"
+        canonical="https://animafps.xyz/aim-resources"
+        openGraph={{
+          images: [
+            {
+              url: 'https://animafps.xyz/images/aim-resources.png'
+            }
+          ]
+        }}
+      />
       <Navbar url="/aim-resources" />
       <Container>
         <br/>
@@ -75,7 +48,7 @@ export default function aimResources():JSX.Element {
           justify="center"
           alignItems="center"
         >
-          <Grid item xs={11}>
+          <Grid item md={11} xs={12}>
           <Table bordered responsive="md" className="shadow-sm">
             <thead
               className="thead-dark"

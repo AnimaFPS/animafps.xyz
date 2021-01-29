@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import { FovConvertForm, FocalLengthForm } from "../components/fov-convert";
 import Navbar from "../components/navbar";
 import { ThemeProvider, Typography, Container } from "@material-ui/core";
@@ -8,53 +8,19 @@ import darkTheme from "../lib/theme";
 export default function FovConvert(): JSX.Element {
   return (
     <>
+      <NextSeo
+        title="FOV and Focal Length Scaling Converter/ Calculator"
+        description="A Calculator to convert different fov values to others per the fov aspect ratio"
+        canonical="https://animafps.xyz/fov-convert"
+        openGraph={{
+          images: [
+            {
+              url: 'https://animafps.xyz/images/fov-convert.png'
+            }
+          ]
+        }}
+      />
       <ThemeProvider theme={darkTheme}>
-        <Head>
-          <title>FOV and Focal Length Scaling Converter/ Calculator</title>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, viewport-fit=cover"
-          />
-          <meta
-            name="description"
-            content="A Calculator to convert different fov values to others per the fov aspect ratio"
-          />
-
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@AnimaFPS" />
-          <meta
-            name="twitter:title"
-            content="FOV and Focal Length Scaling Converter/ Calculator"
-          />
-          <meta
-            name="twitter:description"
-            content="A Calculator to convert different fov values to others per the fov aspect ratio"
-          />
-          <meta name="twitter:creator" content="@AnimaFPS" />
-          <meta
-            name="twitter:image"
-            content="https://animafps.xyz/images/fov-convert.png"
-          />
-
-          <meta
-            property="og:title"
-            content="FOV and Focal Length Scaling Converter/ Calculator"
-          />
-          <meta content="website" property="og:type" />
-          <meta
-            property="og:url"
-            content="https://animafps.xyz/fov-convert/"
-          />
-          <meta
-            property="og:image"
-            content="https://animafps.xyz/images/fov-convert.png"
-          />
-          <meta
-            property="og:description"
-            content="A Calculator to convert different fov values to others per the fov aspect ratio"
-          />
-          <meta property="og:site_name" content="Anima's Stuff" />
-        </Head>
         <Navbar url="/fov-convert" />
         <Container
           className="shadow-sm"

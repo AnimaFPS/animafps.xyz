@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/navbar";
@@ -19,36 +19,18 @@ export default function Home(): JSX.Element {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
-        <Head>
-          <title>Anima's Stuff</title>
-          <meta name="description" content="Cool Things for FPS's and Random projects" />
-          <meta content="summary_large_image" name="twitter:card" />
-          <meta content="@AnimaFPS" name="twitter:site" />
-          <meta content="Anima's Stuff" name="twitter:title" />
-          <meta
-            content="Cool Things for FPS's and Random projects"
-            name="twitter:description"
-          />
-          <meta content="@AnimaFPS" name="twitter:creator" />
-          <meta
-            content="https://images.unsplash.com/photo-1610505466122-b1d9482901ef"
-            name="twitter:image"
-          />
-          <meta content="Anima's Stuff" property="og:title" />
-          <meta content="website" property="og:type" />
-          <meta content="https://animafps.xyz" property="og:url" />
-          <meta
-            content="https://images.unsplash.com/photo-1610505466122-b1d9482901ef"
-            property="og:image"
-          />
-          <meta
-            content="Cool Things for FPS's and Random projects"
-            property="og:description"
-          />
-          <meta content="Anima's Stuff" property="og:site_name" />
-          <link rel="canonical" href="https://animafps.xyz" />
-          
-        </Head>
+        <NextSeo
+          title="Anima's Stuff"
+          description="Cool Things for FPS's and Random projects"
+          canonical="https://animafps.xyz"
+          openGraph={{
+            images: [
+              {
+                url: 'https://images.unsplash.com/photo-1610505466122-b1d9482901ef'
+              }
+            ]
+          }}
+        />
         <Navbar url="/" />
         <Jumbotron>
           <Container maxWidth="md">
