@@ -1,20 +1,20 @@
-import { Container, Typography } from "@material-ui/core";
+import { Container, TableContainer, Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import { getRankingData } from '../lib/glicko'
+import getRankedData from "../lib/glicko"
+import { Table } from "react-bootstrap"
 
 export async function getStaticProps() {
-  const allPostsData = getRankingData()
+  const rankingData = getRankedData()
   return {
     props: {
-      allPostsData
+      rankingData
     }
   }
 }
 
-
-export default function dbtGlicko({ allPostsData }):JSX.Element {
+export default function dbtGlicko({ rankingData }): JSX.Element {
   return (
     <>
       <NextSeo
@@ -24,21 +24,43 @@ export default function dbtGlicko({ allPostsData }):JSX.Element {
         openGraph={{
           images: [
             {
-              url: 'https://animafps.xyz/dbt-glicko.png'
-            }
-          ]
+              url: "https://animafps.xyz/dbt-glicko.png",
+            },
+          ],
         }}
       />
       <Navbar url="/dbt-glicko" />
       <Container>
-        <br/>
+        <br />
         <Typography component="h1" variant="h3" align="center" gutterBottom>
           OCE DBT Team Rankings
         </Typography>
-        <Typography align="center">Coming Soon</Typography>
-        {allPostsData}
+        <Table>
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Team Name</td>
+              <td>Rating</td>
+              <td>RD</td>
+              <td>Played</td>
+            </tr>
+          </thead>
+          {rankingData.map((i:{name: string, rating: number, rd: number, played: number, active: boolean}, index:number) => {
+            if(i.active){
+              return (
+                <tr>
+                  <td>{index + 1}</td>
+                  <td>{i.name}</td>
+                  <td>{i.rating.toFixed(0)}</td>
+                  <td>{"±" + i.rd.toFixed(0)}</td>
+                  <td>{i.played}</td>
+                </tr>
+              )
+            }
+          })}
+        </Table>
       </Container>
-      <Footer sticky />
+      <Footer/>
     </>
   );
 }
