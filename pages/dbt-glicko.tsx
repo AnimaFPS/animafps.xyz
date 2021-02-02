@@ -14,7 +14,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function dbtGlicko({ rankingData }): JSX.Element {
+export default function dbtGlicko({ rankingData }:{rankingData:{name: string, rating: number, rd: number, played: number, active: boolean}[]}): JSX.Element {
   return (
     <>
       <NextSeo
