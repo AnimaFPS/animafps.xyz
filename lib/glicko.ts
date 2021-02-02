@@ -1,6 +1,6 @@
 import glicko2 from "./glicko2";
 import { forEach, isUndefined } from "lodash";
-import cma from "cumulative-moving-average";
+const cma = require("cumulative-moving-average");
 
 function compositeOpponent(a: any[], b: any[], win: number, vol?: number) {
   if (isUndefined(vol)) {
