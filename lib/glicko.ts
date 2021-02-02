@@ -53,7 +53,7 @@ function compositeOpponent(a: any[], b: any[], win: number, vol?: number) {
 function updateRatings(array: any[]) {
   const matches: any[][] = [];
   array.forEach(
-    (i: number[] | { members: any[]; name: string; short: string }[]) => {
+    (i) => {
       let team1: any[] = [];
       let team2: any[] = [];
       i.forEach((e: any, index: number) => {
