@@ -26,9 +26,10 @@ export default function Home(): JSX.Element {
           openGraph={{
             images: [
               {
-                url: 'https://images.unsplash.com/photo-1610505466122-b1d9482901ef'
-              }
-            ]
+                url:
+                  "https://images.unsplash.com/photo-1610505466122-b1d9482901ef",
+              },
+            ],
           }}
         />
         <Navbar url="/" />
