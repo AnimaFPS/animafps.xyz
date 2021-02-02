@@ -52,24 +52,22 @@ function compositeOpponent(a: any[], b: any[], win: number, vol?: number) {
 
 function updateRatings(array: any[]) {
   const matches: any[][] = [];
-  array.forEach(
-    (i) => {
-      let team1: any[] = [];
-      let team2: any[] = [];
-      i.forEach((e: any, index: number) => {
-        teams.forEach((o) => {
-          if (o.short == e && index == 0) {
-            team1 = o.members;
-          } else if (o.short == e && index == 1) {
-            team2 = o.members;
-          }
-        });
+  array.forEach((i) => {
+    let team1: any[] = [];
+    let team2: any[] = [];
+    i.forEach((e: any, index: number) => {
+      teams.forEach((o) => {
+        if (o.short == e && index == 0) {
+          team1 = o.members;
+        } else if (o.short == e && index == 1) {
+          team2 = o.members;
+        }
       });
-      compositeOpponent(team1, team2, i[2]).forEach((o) => {
-        matches.push(o);
-      });
-    }
-  );
+    });
+    compositeOpponent(team1, team2, i[2]).forEach((o) => {
+      matches.push(o);
+    });
+  });
   glicko.updateRatings(matches);
   countMatches(array);
 }
@@ -160,13 +158,13 @@ const sky = glicko.makePlayer();
 const Mintsnaps = glicko.makePlayer();
 const Rolly = glicko.makePlayer();
 const Fuzzy = glicko.makePlayer();
-const Swampiestnnovgrouputz = glicko.makePlayer();
+const Swampiestnutz = glicko.makePlayer();
 const wineworm = glicko.makePlayer();
 const jerry = glicko.makePlayer();
 const TwoSpoons = glicko.makePlayer();
 const Ultimate_Sacrifice = glicko.makePlayer();
 const Asp = glicko.makePlayer();
-const brandan = glicko.makePlayer();
+const bradan = glicko.makePlayer();
 const Saltyy = glicko.makePlayer();
 const Angus = glicko.makePlayer();
 const BiGWoRM = glicko.makePlayer();
@@ -193,6 +191,91 @@ const phylum = glicko.makePlayer();
 const DeportRamen = glicko.makePlayer();
 const vorest = glicko.makePlayer();
 const arnold = glicko.makePlayer();
+const Mickzerofive = glicko.makePlayer();
+const Redoxide = glicko.makePlayer();
+const ia = glicko.makePlayer();
+const xanny = glicko.makePlayer();
+const cerno = glicko.makePlayer();
+const elby = glicko.makePlayer();
+const joolies = glicko.makePlayer();
+
+const players = [
+  { name: "Steej", glicko: Steej },
+  { name: "FraZe", glicko: Fraze },
+  { name: "Camma", glicko: Camma },
+  { name: "foedanny", glicko: foedanny },
+  { name: "dandaking", glicko: dandaking },
+  { name: "Phyrigian", glicko: Phyrigian },
+  { name: "Crib", glicko: Crib },
+  { name: "eLim", glicko: elim },
+  { name: "rk", glicko: rk },
+  { name: "tjk", glicko: tjk },
+  { name: "jim1", glicko: jim1 },
+  { name: "yuki", glicko: yuki },
+  { name: "wch", glicko: wch },
+  { name: "crus", glicko: crus },
+  { name: "Python", glicko: Python },
+  { name: "Stral", glicko: Stral },
+  { name: "f0oster", glicko: f0oster },
+  { name: "ultra", glicko: ultra },
+  { name: "dc_p", glicko: dc_p },
+  { name: "chv", glicko: chv },
+  { name: "fishy", glicko: fishy },
+  { name: "fearZZz", glicko: fearZZz },
+  { name: "ecent", glicko: ecent },
+  { name: "Anima", glicko: Anima },
+  { name: "SHrulez", glicko: SHrulez },
+  { name: "mike", glicko: mike },
+  { name: "omyah", glicko: omyah },
+  { name: "Vaselyn", glicko: MRSB },
+  { name: "raV", glicko: raV },
+  { name: "casp", glicko: casp },
+  { name: "vertigo", glicko: vertigo },
+  { name: "sky", glicko: sky },
+  { name: "Mynt", glicko: Mintsnaps },
+  { name: "Rolly", glicko: Rolly },
+  { name: "Fuzzy", glicko: Fuzzy },
+  { name: "Swampiestnutz", glicko: Swampiestnutz },
+  { name: "wineworm", glicko: wineworm },
+  { name: "jerry", glicko: jerry },
+  { name: "TwoSpoons", glicko: TwoSpoons },
+  { name: "Ultimate_Sacrifice", glicko: Ultimate_Sacrifice },
+  { name: "Asp", glicko: Asp },
+  { name: "bradan", glicko: bradan },
+  { name: "Saltyy", glicko: Saltyy },
+  { name: "Angus", glicko: Angus },
+  { name: "BiGWoRM", glicko: BiGWoRM },
+  { name: "eggE", glicko: eggE },
+  { name: "Sooza", glicko: Sooza },
+  { name: "dirtbox", glicko: dirtbox },
+  { name: "Profanum", glicko: Profanum },
+  { name: "murdz", glicko: murdz },
+  { name: "Chugg", glicko: Chugg },
+  { name: "QHAT", glicko: QHAT },
+  { name: "ckm", glicko: ckm },
+  { name: "Night", glicko: Night },
+  { name: "MuTAnT", glicko: MuTAnT },
+  { name: "kolos4l", glicko: kolos4l },
+  { name: "prosk", glicko: prosk },
+  { name: "elefanta", glicko: elefanta },
+  { name: "stervejerbs", glicko: stervejerbs },
+  { name: "three", glicko: three },
+  { name: "Aeol", glicko: Aeol },
+  { name: "rats0up", glicko: rats0up },
+  { name: "donna", glicko: donna },
+  { name: "Bobbicals", glicko: Bobbicals },
+  { name: "phylum", glicko: phylum },
+  { name: "DeportRamen", glicko: DeportRamen },
+  { name: "vorest", glicko: vorest },
+  { name: "arnold", glicko: arnold },
+  { name: "Mickzerofive", glicko: Mickzerofive },
+  { name: "Redoxide", glicko: Redoxide },
+  { name: "ia", glicko: ia },
+  { name: "xanny", glicko: xanny },
+  { name: "cerno", glicko: cerno },
+  { name: "elby", glicko: elby },
+  { name: "joolies", glicko: joolies },
+];
 
 const teams = [
   {
@@ -207,28 +290,28 @@ const teams = [
     name: "Three Big Balls",
     short: "threebb",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [Crib, elim, rk],
     name: "2g",
     short: "twog",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [tjk, jim1, yuki],
     name: "DICBoys",
     short: "dic",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [wch, crus, Python],
     name: "fuN",
     short: "fun",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [Stral, f0oster, ultra],
@@ -242,7 +325,7 @@ const teams = [
     name: "dz",
     short: "dz",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [dc_p, chv, fishy],
@@ -263,24 +346,24 @@ const teams = [
     name: "CLUMP",
     short: "clump",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [MRSB, raV, casp],
     name: "Mon",
     short: "mon",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [vertigo, sky, Mintsnaps],
     name: "Fusion",
     short: "fusion",
     played: 0,
-    active: true,
+    active: false,
   },
   {
-    members: [Rolly, Fuzzy, Swampiestnnovgrouputz],
+    members: [Rolly, Fuzzy, Swampiestnutz],
     name: "GRUMP",
     short: "grump",
     played: 0,
@@ -291,7 +374,7 @@ const teams = [
     name: "Too Old For Dick Jokes",
     short: "tofdj",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [Saltyy, Angus, BiGWoRM],
@@ -301,7 +384,7 @@ const teams = [
     active: false,
   },
   {
-    members: [Ultimate_Sacrifice, Asp, brandan],
+    members: [Ultimate_Sacrifice, Asp, bradan],
     name: "soul4",
     short: "soul4",
     played: 0,
@@ -312,14 +395,14 @@ const teams = [
     name: "Cooked Esports",
     short: "cooked",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [Ultimate_Sacrifice, ckm, Night],
     name: "itz gaming",
     short: "itz",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [MuTAnT, kolos4l, prosk],
@@ -333,14 +416,14 @@ const teams = [
     short: "bong",
     members: [elefanta, stervejerbs, three],
     played: 0,
-    active: true,
+    active: false,
   },
   {
     name: "vex",
     short: "vex",
-    members: [Asp, brandan, Aeol, Night],
+    members: [Asp, bradan, Aeol, Night],
     played: 0,
-    active: true,
+    active: false,
   },
   {
     name: "Tuned Air",
@@ -354,15 +437,64 @@ const teams = [
     short: "tn",
     members: [rats0up, donna, Bobbicals],
     played: 0,
-    active: true,
+    active: false,
   },
   {
     name: "THUMP",
     short: "thump",
     members: [DeportRamen, vorest, arnold],
     played: 0,
-    active: true
-  }
+    active: false,
+  },
+  {
+    name: "THUMP",
+    short: "thumpsummer",
+    members: [SHrulez, Redoxide, DeportRamen],
+    played: 0,
+    active: true,
+  },
+  {
+    name: "cy@",
+    short: "cyamick",
+    members: [Fraze, Camma, Mickzerofive],
+    played: 0,
+    active: false,
+  },
+  {
+    name: "2 big balls + mick",
+    short: "2bb",
+    members: [dandaking, Mickzerofive, foedanny],
+    played: 0,
+    active: true,
+  },
+  {
+    name: "LARGE MEN",
+    short: "lgmen",
+    members: [bradan, Crib, ia],
+    played: 0,
+    active: true,
+  },
+  {
+    name: "CLUMP",
+    short: "clumpsummer",
+    members: [mike, omyah, Night],
+    played: 0,
+    active: true,
+  },
+  {
+    name: "Tribute",
+    short: "tribute",
+    members: [xanny, cerno, Mintsnaps],
+    played: 0,
+    active: true,
+  },
+  {
+    name: "MON",
+    short: "monsummer",
+    members: [raV, elby, joolies],
+    played: 0,
+    active: true,
+  },
 ];
 
 const OctoberQual1 = [
@@ -490,17 +622,49 @@ const NovemberFinals = [
   ["grump", "vex", 1],
   ["clump", "tn", 0],
   ["grump", "tn", 1 / 3],
-  ["cya", "mon", 1],
+  ["cyamick", "mon", 1],
   ["twog", "dz", 3 / 4],
   ["threebb", "anti", 3 / 5],
   ["sal", "kod", 1],
-  ["cya", "twog", 3 / 4],
+  ["cyamick", "twog", 3 / 4],
   ["threebb", "sal", 2 / 5],
-  ["cya", "sal", 3 / 4],
+  ["cyamick", "sal", 3 / 4],
 ];
 updateRatings(NovemberFinals);
 
-export default function getRankingData(): {
+const SummerQual = [
+  ["sal", "anti", 2 / 3],
+  ["sal", "monsummer", 2 / 3],
+  ["sal", "grump", 1],
+  ["sal", "lgmen", 1],
+  ["anti", "monsummer", 1],
+  ["anti", "grump", 1],
+  ["anti", "lgmen", 1],
+  ["monsummer", "grump", 0],
+  ["monsummer", "lgmen", 1],
+  ["grump", "lgmen", 1],
+  ["2bb", "kod", 1],
+  ["2bb", "clumpummer", 1],
+  ["2bb", "thumpsummer", 1],
+  ["2bb", "tribute", 1],
+  ["kod", "clumpsummer", 1],
+  ["kod", "thumpsummer", 1],
+  ["kod", "tribute", 1],
+  ["clumpsummer", "thumpsummer", 1],
+  ["clumpsummer", "tribute", 1],
+  ["thumpsummer", "tribute", 1],
+  ["thumpsummer", "lgmen", 1],
+  ["monsummer", "tribute", 1],
+  ["sal", "thumpsummer", 1],
+  ["kod", "grump", 0],
+  ["2bb", "monsummer", 1],
+  ["anti", "clumpsummer", 1],
+  ["thumpsummer", "lgmen", 1],
+  ["monsummer", "tribute", 1],
+];
+updateRatings(SummerQual);
+
+export function getRankingData(): {
   name: string;
   rating: number;
   rd: number;
@@ -517,10 +681,40 @@ export default function getRankingData(): {
       };
     })
     .sort((a, b) => {
-      if (a.rating > b.rating || !b.active) {
+      if (!b.active) {
         return -1;
       }
-      if (b.rating > a.rating && b.active) {
+      if (!a.active) {
+        return 1;
+      }
+      if (a.rating > b.rating) {
+        return -1;
+      }
+      if (b.rating > a.rating) {
+        return 1;
+      }
+      return 0;
+    });
+}
+
+export function getPlayerData(): {
+  name: string;
+  rating: number;
+  rd: number;
+}[] {
+  return players
+    .map((i) => {
+      return {
+        name: i.name,
+        rating: i.glicko.getRating(),
+        rd: i.glicko.getRd(),
+      };
+    })
+    .sort((a, b) => {
+      if (a.rating > b.rating) {
+        return -1;
+      }
+      if (b.rating > a.rating) {
         return 1;
       }
       return 0;
