@@ -1,1 +1,1 @@
-# Personal Project to learn react/ nextjs and upgrade my old personal website(https://animafps.github.io)
+# Personal project to learn differnet front-end frameworks and libraries as well make a website to use as a portfolio for my projects
