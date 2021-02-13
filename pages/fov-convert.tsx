@@ -15,9 +15,9 @@ export default function FovConvert(): JSX.Element {
         openGraph={{
           images: [
             {
-              url: 'https://animafps.xyz/images/fov-convert.png'
-            }
-          ]
+              url: "https://animafps.xyz/images/fov-convert.png",
+            },
+          ],
         }}
       />
       <ThemeProvider theme={darkTheme}>

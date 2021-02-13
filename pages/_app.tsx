@@ -2,7 +2,7 @@ import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
 import { AppProps } from "next/app";
-import { DefaultSeo } from 'next-seo';
+import { DefaultSeo } from "next-seo";
 import "normalize.css";
 import "../styles/bootstrap.min.css";
 import "../styles/nprogress.css";
@@ -19,16 +19,16 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <DefaultSeo
-           openGraph={{
-            type: 'website',
-            locale: 'en',
-            site_name: 'Anima\'s stuff',
-          }}
-          twitter={{
-            handle: '@AnimaFPS',
-            cardType: 'summary_large_image',
-          }}
-        />
+        openGraph={{
+          type: "website",
+          locale: "en",
+          site_name: "Anima's stuff",
+        }}
+        twitter={{
+          handle: "@AnimaFPS",
+          cardType: "summary_large_image",
+        }}
+      />
       <Head>
         <meta
           name="viewport"

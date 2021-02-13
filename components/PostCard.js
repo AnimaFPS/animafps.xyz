@@ -70,8 +70,8 @@ const styles = makeStyles((muiBaseTheme) => ({
     },
   },
   footer: {
-    height: "30px"
-  }
+    height: "30px",
+  },
 }));
 
 export default function MediumCard(props) {
@@ -105,20 +105,20 @@ export default function MediumCard(props) {
     <Grid item xs={12} sm={12} lg={4} className={classes.grid}>
       <Card className={classes.card}>
         <CardMedia className={classes.media} image={props.thumbnail}>
-            <Avatar
-              alt="Anima"
-              className={classes.avatar}
-              src={props.avatar}
-              component="a"
-              style={{
-                display: "inline-block",
-                alignItems: "center",
-                marginLeft: "1.5625rem",
-              }}
-              varient="rounded"
-              href={props.profilelink}
-              target="_blank"
-            />
+          <Avatar
+            alt="Anima"
+            className={classes.avatar}
+            src={props.avatar}
+            component="a"
+            style={{
+              display: "inline-block",
+              alignItems: "center",
+              marginLeft: "1.5625rem",
+            }}
+            varient="rounded"
+            href={props.profilelink}
+            target="_blank"
+          />
         </CardMedia>
         <CardContent
           className={classes.content}
@@ -144,20 +144,21 @@ export default function MediumCard(props) {
         </CardContent>
         <Divider className={classes.divider} />
         <CardActions
-          style={{ paddingLeft: "1.5625rem", paddingRight: "1.5625rem" }} className={classes.footer}
+          style={{ paddingLeft: "1.5625rem", paddingRight: "1.5625rem" }}
+          className={classes.footer}
         >
           <Grid>
-              <Typography
-                display="block"
-                variant="body1"
-                style={{
-                  fontSize: "14px",
-                  color: "#868e96",
-                  display: "inline-block"
-                }}
-              >
-                <FontAwesomeIcon icon={faCalendarAlt} width="14px"/> {finalDate}
-              </Typography>
+            <Typography
+              display="block"
+              variant="body1"
+              style={{
+                fontSize: "14px",
+                color: "#868e96",
+                display: "inline-block",
+              }}
+            >
+              <FontAwesomeIcon icon={faCalendarAlt} width="14px" /> {finalDate}
+            </Typography>
           </Grid>
         </CardActions>
       </Card>

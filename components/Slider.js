@@ -40,9 +40,9 @@ class Slider extends React.Component {
     const { itemRows } = this.state;
 
     return (
-      <Grid 
-        container 
-        spacing={1} 
+      <Grid
+        container
+        spacing={1}
         direction="row"
         justify="center"
         alignItems="center"

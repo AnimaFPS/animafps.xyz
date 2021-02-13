@@ -283,7 +283,7 @@ const teams = [
     name: "cy@",
     short: "cya",
     played: 0,
-    active: true,
+    active: false,
   },
   {
     members: [foedanny, dandaking, Phyrigian],
@@ -663,6 +663,13 @@ const SummerQual = [
   ["monsummer", "tribute", 1],
 ];
 updateRatings(SummerQual);
+
+const SummerLeague = [
+  ["anti", "clumpsummer", 1],
+  ["thumpsummer", "sal", 0],
+  ["clumpsummer", "grump", 2 / 3],
+];
+updateRatings(SummerLeague);
 
 export function getRankingData(): {
   name: string;
