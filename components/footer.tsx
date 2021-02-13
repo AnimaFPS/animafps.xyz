@@ -9,111 +9,157 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Col } from "react-bootstrap";
-import { makeStyles } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core";
 
 const styles = makeStyles(() => ({
   sticky: {
-    position: "absolute", 
+    position: "absolute",
     bottom: "0",
-    width: "100%"
+    width: "100%",
   },
 }));
 
-const Footer = ({ sticky }: { sticky?: boolean }):JSX.Element => {
+const Footer = ({ sticky }: { sticky?: boolean }): JSX.Element => {
   const classes = styles();
-  return <>
-    {(sticky == true) ? 
-      <footer className={classes.sticky}>
-        <div className="mt-auto py-3 bg-dark">
-        <Container>
-          <Row>
-            <Col>
-              <span className="text-muted">
-                Anima's Stuff &copy; 2021. All Rights Reserved.
-              </span>
-            </Col>
-            <Col>
-              <span className="float-right">
-                <a href="https://twitter.com/AnimaFPS" aria-label="twitter">
-                  <FontAwesomeIcon icon={faTwitter} size="lg" width="20px" />
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://twitch.tv/animafps" aria-label="twitch">
-                  <FontAwesomeIcon icon={faTwitch} size="lg" width="20px" />
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://youtube.com/animafps" aria-label="youtube">
-                  <FontAwesomeIcon icon={faYoutube} size="lg" width="20px" />
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://instagram.com/animafps" aria-label="instagram">
-                  <FontAwesomeIcon icon={faInstagram} size="lg" width="20px" />
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://animafps.medium.com" aria-label="medium">
-                  <FontAwesomeIcon icon={faMedium} size="lg" width="20px" />
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://discord.com/invite/xJdQxps" aria-label="discord">
-                  <FontAwesomeIcon icon={faDiscord} size="lg" width="20px" />
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://github.com/animafps" aria-label="Github">
-                  <FontAwesomeIcon icon={faGithub} size="lg" width="20px" />
-                </a>
-              </span>
-            </Col>
-          </Row>
-        </Container>
-        </div>
-      </footer>
-      : 
+  return (
+    <>
+      {sticky == true ? (
+        <footer className={classes.sticky}>
+          <div className="mt-auto py-3 bg-dark">
+            <Container>
+              <Row>
+                <Col>
+                  <span className="text-muted">
+                    Anima's Stuff &copy; 2021. All Rights Reserved.
+                  </span>
+                </Col>
+                <Col>
+                  <span className="float-right">
+                    <a href="https://twitter.com/AnimaFPS" aria-label="twitter">
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitch.tv/animafps" aria-label="twitch">
+                      <FontAwesomeIcon icon={faTwitch} size="lg" width="20px" />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://youtube.com/animafps" aria-label="youtube">
+                      <FontAwesomeIcon
+                        icon={faYoutube}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a
+                      href="https://instagram.com/animafps"
+                      aria-label="instagram"
+                    >
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://animafps.medium.com" aria-label="medium">
+                      <FontAwesomeIcon icon={faMedium} size="lg" width="20px" />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a
+                      href="https://discord.com/invite/xJdQxps"
+                      aria-label="discord"
+                    >
+                      <FontAwesomeIcon
+                        icon={faDiscord}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/animafps" aria-label="Github">
+                      <FontAwesomeIcon icon={faGithub} size="lg" width="20px" />
+                    </a>
+                  </span>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        </footer>
+      ) : (
         <footer>
           <div className="mt-auto py-3 bg-dark">
-          <Container>
-            <Row>
-              <Col>
-                <span className="text-muted">
-                  Anima's Stuff &copy; 2021. All Rights Reserved.
-                </span>
-              </Col>
-              <Col>
-                <span className="float-right">
-                  <a href="https://twitter.com/animafps" aria-label="twitter">
-                    <FontAwesomeIcon icon={faTwitter} size="lg" width="20px" />
-                  </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://twitch.tv/animafps" aria-label="twitch">
-                    <FontAwesomeIcon icon={faTwitch} size="lg" width="20px" />
-                  </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://youtube.com/animafps" aria-label="youtube">
-                    <FontAwesomeIcon icon={faYoutube} size="lg" width="20px" />
-                  </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://instagram.com/animafps" aria-label="instagram">
-                    <FontAwesomeIcon icon={faInstagram} size="lg" width="20px" />
-                  </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://animafps.medium.com" aria-label="medium">
-                    <FontAwesomeIcon icon={faMedium} size="lg" width="20px" />
-                  </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://discord.com/invite/xJdQxps" aria-label="discord">
-                    <FontAwesomeIcon icon={faDiscord} size="lg" width="20px" />
-                  </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://github.com/animafps" aria-label="Github">
-                    <FontAwesomeIcon icon={faGithub} size="lg" width="20px" />
-                  </a>
-                </span>
-              </Col>
-            </Row>
-          </Container>
+            <Container>
+              <Row>
+                <Col>
+                  <span className="text-muted">
+                    Anima's Stuff &copy; 2021. All Rights Reserved.
+                  </span>
+                </Col>
+                <Col>
+                  <span className="float-right">
+                    <a href="https://twitter.com/animafps" aria-label="twitter">
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitch.tv/animafps" aria-label="twitch">
+                      <FontAwesomeIcon icon={faTwitch} size="lg" width="20px" />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://youtube.com/animafps" aria-label="youtube">
+                      <FontAwesomeIcon
+                        icon={faYoutube}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a
+                      href="https://instagram.com/animafps"
+                      aria-label="instagram"
+                    >
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://animafps.medium.com" aria-label="medium">
+                      <FontAwesomeIcon icon={faMedium} size="lg" width="20px" />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a
+                      href="https://discord.com/invite/xJdQxps"
+                      aria-label="discord"
+                    >
+                      <FontAwesomeIcon
+                        icon={faDiscord}
+                        size="lg"
+                        width="20px"
+                      />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/animafps" aria-label="Github">
+                      <FontAwesomeIcon icon={faGithub} size="lg" width="20px" />
+                    </a>
+                  </span>
+                </Col>
+              </Row>
+            </Container>
           </div>
-        </footer> 
-      }
-  </>;
+        </footer>
+      )}
+    </>
+  );
 };
 
 export default Footer;

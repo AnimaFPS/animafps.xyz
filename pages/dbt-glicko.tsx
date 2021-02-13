@@ -124,7 +124,7 @@ export default function dbtGlicko({
                   <td>{i.rating.toFixed(0)}</td>
                   <td>{"±" + i.rd.toFixed(0)}</td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </Table>
