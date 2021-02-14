@@ -299,7 +299,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={11}
+                    rowSpan={12}
                     className="align-middle bg-dark text-white text-center"
                     id="routines-general"
                   >
@@ -539,9 +539,31 @@ export default function aimResources(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://drive.google.com/drive/folders/1lc048HvewnkIqBP7kwDOj3-v6ctmmcC8"
+                      className="text-reset"
+                    >
+                      Lapu4's Playlists
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    A collection of 7 different playlist files created by lapu4
+                    with a focus on static targets
+                  </td>
+                  <td className="align-middle">
+                    <a
+                      href="https://twitter.com/btwridd"
+                      className="text-reset"
+                    >
+                      ridd
+                    </a>
+                  </td>
+                </tr>
+                <tr>
                   <th
                     scope="row"
-                    rowSpan={13}
+                    rowSpan={14}
                     className="align-middle bg-light text-dark text-center"
                     id="routines-specific"
                   >
@@ -832,6 +854,24 @@ export default function aimResources(): JSX.Element {
                       className="text-reset"
                     >
                       , Mana
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://docs.google.com/document/d/1pcQOk_WXui1uwUOm6r1mDdvUiWUzgPzLx6kGoE0D6Sw/edit"
+                      className="text-reset"
+                    >
+                      steadegy Valorant Routine
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    Simple Valorant specific routin with 2 tiers of difficulty
+                  </td>
+                  <td className="align-middle">
+                    <a href="https://twitch.tv/steadegy" className="text-reset">
+                      steadegy
                     </a>
                   </td>
                 </tr>
