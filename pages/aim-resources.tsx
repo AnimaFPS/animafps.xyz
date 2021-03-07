@@ -67,7 +67,7 @@ export default function aimResources(): JSX.Element {
                     Documents
                   </th>
                   <td className="align-middle">
-                    <a href="http://bit.ly/2l3jZTf" className="text-reset">
+                    <a href="https://bit.ly/2l3jZTf" className="text-reset">
                       Voltaic's Aim Journey
                     </a>
                   </td>
@@ -87,7 +87,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <td className="align-middle">
                     <a
-                      href="http://bit.ly/2TIudqA "
+                      href="https://bit.ly/2TIudqA "
                       className="text-reset font-weight-bold"
                     >
                       Voltaic Advice FAQ
@@ -519,7 +519,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <td className="align-middle">
                     <a
-                      href="https://docs.google.com/document/d/1zod4D-Em_j8V4caqunS53VrkbWM4Qxe1qzpHTEYiLlo/edit"
+                      href="https://github.com/riddbtw/kovaaks-plos"
                       className="text-reset"
                     >
                       Collection of playlists for Kovaaks
@@ -553,10 +553,10 @@ export default function aimResources(): JSX.Element {
                   </td>
                   <td className="align-middle">
                     <a
-                      href="https://twitter.com/btwridd"
+                      href="https://twitter.com/Lapu4Lapua"
                       className="text-reset"
                     >
-                      ridd
+                      Lapu4
                     </a>
                   </td>
                 </tr>
@@ -878,7 +878,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={3}
+                    rowSpan={4}
                     className="align-middle bg-dark text-white text-center"
                     id="videos"
                   >
@@ -952,6 +952,28 @@ export default function aimResources(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://www.youtube.com/playlist?list=PL7fhQKTLcpNvuznbhZFnfkTC2lM3quNqB"
+                      className="text-reset"
+                    >
+                      Gaming and Aiming Explained Series
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    Series of small videos explaing the basics of everything aiming and gaming related 
+                    There are not many videos but there are many in the works with 1 or 2 a week being released
+                  </td>
+                  <td className="align-middle">
+                    <a
+                      href="https://twitter.com/AnimaFPS"
+                      className="text-reset"
+                    >
+                      Anima
+                    </a>
+                  </td>
+                </tr>
+                <tr>
                   <th
                     scope="row"
                     rowSpan={11}
@@ -983,7 +1005,7 @@ export default function aimResources(): JSX.Element {
                 </tr>
                 <tr>
                   <td className="align-middle">
-                    <a href="http://bit.ly/2WB8Vvm" className="text-reset">
+                    <a href="https://bit.ly/2WB8Vvm" className="text-reset">
                       Benchmark score tracking sheet
                     </a>
                   </td>
