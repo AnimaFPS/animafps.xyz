@@ -563,7 +563,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={14}
+                    rowSpan={15}
                     className="align-middle bg-light text-dark text-center"
                     id="routines-specific"
                   >
@@ -872,6 +872,27 @@ export default function aimResources(): JSX.Element {
                   <td className="align-middle">
                     <a href="https://twitch.tv/steadegy" className="text-reset">
                       steadegy
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a 
+                      href="https://docs.google.com/document/d/1B-9eMW5egwZWSgOzIPLqo0MdlEYcyslspUYOC3pllMo/edit"
+                      className="text-reset"
+                    >
+                      drekes4's Fortnite kovaak scenarios V1 
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    A collection of recomended scenarios for Fortnite with tiers and categories
+                  </td>
+                  <td className="align-middle">
+                    <a
+                      href="https://twitter.com/drekes4"
+                      className="text-reset"
+                    >
+                      drekes4
                     </a>
                   </td>
                 </tr>
