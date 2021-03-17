@@ -563,7 +563,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={15}
+                    rowSpan={16}
                     className="align-middle bg-light text-dark text-center"
                     id="routines-specific"
                   >
@@ -877,15 +877,16 @@ export default function aimResources(): JSX.Element {
                 </tr>
                 <tr>
                   <td className="align-middle">
-                    <a 
+                    <a
                       href="https://docs.google.com/document/d/1B-9eMW5egwZWSgOzIPLqo0MdlEYcyslspUYOC3pllMo/edit"
                       className="text-reset"
                     >
-                      drekes4's Fortnite kovaak scenarios V1 
+                      drekes4's Fortnite kovaak scenarios V1
                     </a>
                   </td>
                   <td className="align-middle">
-                    A collection of recomended scenarios for Fortnite with tiers and categories
+                    A collection of recomended scenarios for Fortnite with tiers
+                    and categories
                   </td>
                   <td className="align-middle">
                     <a
@@ -893,6 +894,28 @@ export default function aimResources(): JSX.Element {
                       className="text-reset"
                     >
                       drekes4
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://docs.google.com/document/d/12ZCy65kVJfgAwoDDHefVXzlRCzRifMmc7syzhrULoYM/edit"
+                      className="text-reset"
+                    >
+                      Aim Training by DrUninstall
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    A set of game specific advice and kovaaks routines for
+                    Warzone/COD, a complete playlist, tacfps and Fortnite
+                  </td>
+                  <td className="align-middle">
+                    <a
+                      href="https://twitter.com/DrUninstall"
+                      className="text-reset"
+                    >
+                      DrUninstall
                     </a>
                   </td>
                 </tr>
@@ -982,8 +1005,10 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    Series of small videos explaing the basics of everything aiming and gaming related 
-                    There are not many videos but there are many in the works with 1 or 2 a week being released
+                    Series of small videos explaing the basics of everything
+                    aiming and gaming related There are not many videos but
+                    there are many in the works with 1 or 2 a week being
+                    released
                   </td>
                   <td className="align-middle">
                     <a
