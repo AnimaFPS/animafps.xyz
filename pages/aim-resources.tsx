@@ -563,7 +563,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={16}
+                    rowSpan={17}
                     className="align-middle bg-light text-dark text-center"
                     id="routines-specific"
                   >
@@ -916,6 +916,26 @@ export default function aimResources(): JSX.Element {
                       className="text-reset"
                     >
                       DrUninstall
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://docs.google.com/document/d/18Mf6P4t6IEdJi6J548s3RGQw41WQQSn2jGhVqgYULec/edit#heading=h.kw0s6eyi8i70"
+                      className="text-reset font-weight-bold"
+                    >
+                      Pure Apex Routine
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    A fantastic new routine using 1b1 method and a great set of
+                    specifcally made scenarios for a hard training routine for
+                    Apex Legends but it maybe too hard for new players
+                  </td>
+                  <td className="align-middle">
+                    <a href="https://twitter.com/PureGofficial">
+                      PureG and many contributers
                     </a>
                   </td>
                 </tr>
