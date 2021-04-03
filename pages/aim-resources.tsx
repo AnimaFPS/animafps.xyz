@@ -60,7 +60,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={13}
+                    rowSpan={14}
                     className="align-middle bg-light text-dark text-center"
                     id="documents"
                   >
@@ -293,6 +293,28 @@ export default function aimResources(): JSX.Element {
                       className="text-reset"
                     >
                       Prosper
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://docs.google.com/document/d/1LtRwQEL4gPp-g-qkcU6czxe1OyaVMp7oJOD3jIbA_Aw/edit"
+                      className="text-reset"
+                    >
+                      Aim training guide by Fallen
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    Great introductory document about the basics of aim training
+                    and some simple starting resouces
+                  </td>
+                  <td className="align-middle">
+                    <a
+                      href="https://twitter.com/FallenAims"
+                      className="text-reset"
+                    >
+                      Fallen
                     </a>
                   </td>
                 </tr>
@@ -934,7 +956,7 @@ export default function aimResources(): JSX.Element {
                     Apex Legends but it maybe too hard for new players
                   </td>
                   <td className="align-middle">
-                    <a href="https://twitter.com/PureGofficial">
+                    <a href="https://twitter.com/PureGofficial" className="text-reset">
                       PureG and many contributers
                     </a>
                   </td>
