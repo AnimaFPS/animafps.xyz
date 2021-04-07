@@ -651,33 +651,39 @@ export default function aimResources(): JSX.Element {
                     Many game specific routines which include: CS/Val, Fortnite,
                     AFPS, R6, Hyperscape, Apex, LG 1v1(AFPS), COD: Warzone
                   </td>
-                  <td className="align-middle" rowSpan={2}>
+                  <td className="align-middle" rowSpan={3}>
                     <a
                       href="https://twitter.com/VoltaicHQ"
                       className="text-reset"
                     >
                       Voltaic/ Sini
                     </a>
-                    <a
-                      href="https://twitter.com/vF_Aimer7"
-                      className="text-reset"
-                    >
-                      , Aimer7
-                    </a>
                     , Many other people check the bottom of the docs
                   </td>
                 </tr>
                 <tr>
                   <td className="align-middle">
-                    <a
-                      href="https://bit.ly/3cNRNIR"
-                      className="text-reset font-weight-bold"
-                    >
-                      Voltaic Issue specifc aim training
+                    <a href="https://bit.ly/3cNRNIR" className="text-reset">
+                      Voltaic Issue specifc aim training 1.0
                     </a>
                   </td>
                   <td className="align-middle">
                     Smoothness & Precision, Speed, Large Angles, Reactivity
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://bit.ly/vtissueroutines"
+                      className="text-reset font-weight-bold"
+                    >
+                      Voltaic Issue specifc aim training 2.0
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    A more updated and natural issue specific set of routines
+                    with two levels of difficulty. Routines: Smoothness and
+                    Precision, Static Target Acquisition, Speed, Reactivity
                   </td>
                 </tr>
                 <tr>
@@ -956,7 +962,10 @@ export default function aimResources(): JSX.Element {
                     Apex Legends but it maybe too hard for new players
                   </td>
                   <td className="align-middle">
-                    <a href="https://twitter.com/PureGofficial" className="text-reset">
+                    <a
+                      href="https://twitter.com/PureGofficial"
+                      className="text-reset"
+                    >
                       PureG and many contributers
                     </a>
                   </td>
