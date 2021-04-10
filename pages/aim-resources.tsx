@@ -12,7 +12,7 @@ export default function aimResources(): JSX.Element {
     <>
       <NextSeo
         title="Aggregated Aiming Resources By Anima"
-        description="Big aggregated sheet of every Aiming Resource evermade including guides general and specific routines, videos and more"
+        description="Big aggregated sheet of every Aiming Resource ever made including guides general and specific routines, videos and more"
         canonical="https://animafps.xyz/aim-resources"
         openGraph={{
           images: [
@@ -52,7 +52,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th scope="col">Category</th>
                   <th scope="col">Title/Link</th>
-                  <th scope="col">Descritption</th>
+                  <th scope="col">Description</th>
                   <th scope="col">Author(s)</th>
                 </tr>
               </thead>
@@ -107,7 +107,7 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    The best way to test and messure improvement
+                    The best way to test and measure improvement
                   </td>
                 </tr>
                 <tr>
@@ -191,7 +191,7 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    All about sensitivites and the benefits and downsides of
+                    All about sensitivities and the benefits and downsides of
                     different sens as well as how to choose a range to play in
                   </td>
                 </tr>
@@ -307,7 +307,7 @@ export default function aimResources(): JSX.Element {
                   </td>
                   <td className="align-middle">
                     Great introductory document about the basics of aim training
-                    and some simple starting resouces
+                    and some simple starting resource
                   </td>
                   <td className="align-middle">
                     <a
@@ -337,7 +337,7 @@ export default function aimResources(): JSX.Element {
                   </td>
                   <td className="align-middle">
                     The best basic routine with the benchmarks built in. My
-                    recomendation for a simple routine for all levels
+                    recommendation for a simple routine for all levels
                   </td>
                   <td className="align-middle" rowSpan={2}>
                     <a
@@ -354,11 +354,11 @@ export default function aimResources(): JSX.Element {
                       href="https://docs.google.com/document/d/1wTzR9rPzS9QbA3lCxutHNk9wmSfSxV3F-PIE50kexZs/edit"
                       className="text-reset"
                     >
-                      Voltaic recomended scenarios
+                      Voltaic recommended scenarios
                     </a>
                   </td>
                   <td className="align-middle">
-                    Good basis to make a personalised routine and find new
+                    Good basis to make a personalized routine and find new
                     scenarios{" "}
                   </td>
                 </tr>
@@ -526,7 +526,7 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    A List of Indivdual .plo (playlist) files for Kovaaks
+                    A List of Individual .plo/ .json (playlist) files for Kovaaks
                     includes some of the routines on this list
                   </td>
                   <td className="align-middle">
@@ -664,7 +664,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <td className="align-middle">
                     <a href="https://bit.ly/3cNRNIR" className="text-reset">
-                      Voltaic Issue specifc aim training 1.0
+                      Voltaic Issue specific aim training 1.0
                     </a>
                   </td>
                   <td className="align-middle">
@@ -677,7 +677,7 @@ export default function aimResources(): JSX.Element {
                       href="https://bit.ly/vtissueroutines"
                       className="text-reset font-weight-bold"
                     >
-                      Voltaic Issue specifc aim training 2.0
+                      Voltaic Issue specific aim training 2.0
                     </a>
                   </td>
                   <td className="align-middle">
@@ -895,7 +895,7 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    Simple Valorant specific routin with 2 tiers of difficulty
+                    Simple Valorant specific routine with 2 tiers of difficulty
                   </td>
                   <td className="align-middle">
                     <a href="https://twitch.tv/steadegy" className="text-reset">
@@ -913,7 +913,7 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    A collection of recomended scenarios for Fortnite with tiers
+                    A collection of recommended scenarios for Fortnite with tiers
                     and categories
                   </td>
                   <td className="align-middle">
@@ -958,7 +958,7 @@ export default function aimResources(): JSX.Element {
                   </td>
                   <td className="align-middle">
                     A fantastic new routine using 1b1 method and a great set of
-                    specifcally made scenarios for a hard training routine for
+                    specifically made scenarios for a hard training routine for
                     Apex Legends but it maybe too hard for new players
                   </td>
                   <td className="align-middle">
@@ -966,7 +966,7 @@ export default function aimResources(): JSX.Element {
                       href="https://twitter.com/PureGofficial"
                       className="text-reset"
                     >
-                      PureG and many contributers
+                      PureG and many contributors
                     </a>
                   </td>
                 </tr>
@@ -1034,8 +1034,8 @@ export default function aimResources(): JSX.Element {
                   </td>
                   <td className="align-middle">
                     A good and basic series introduction into aiming and kovaaks
-                    concepts with videos incuding(Setting up Kovaaks, Training
-                    Properly, Benchmarks and Routines, Sensitivites)
+                    concepts with videos including(Setting up Kovaaks, Training
+                    Properly, Benchmarks and Routines, Sensitivities)
                   </td>
                   <td className="align-middle">
                     <a
@@ -1056,7 +1056,7 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    Series of small videos explaing the basics of everything
+                    Series of small videos explaining the basics of everything
                     aiming and gaming related There are not many videos but
                     there are many in the works with 1 or 2 a week being
                     released
@@ -1125,11 +1125,11 @@ export default function aimResources(): JSX.Element {
                       href="https://github.com/VoltaicHQ/Progress-Sheet-Updater"
                       className="text-reset"
                     >
-                      Auto Progess Update Tool for Benchmarks
+                      Auto Progress Update Tool for Benchmarks
                     </a>
                   </td>
                   <td className="align-middle">
-                    A fully automated Script to inport your kovaaks scores for
+                    A fully automated Script to import your kovaaks scores for
                     the voltaic benchmarks to the above tracking sheet in real
                     time
                   </td>
@@ -1172,7 +1172,7 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    Smoothly changes sensititivty with mouse movement randomly
+                    Smoothly changes sensitivity with mouse movement randomly
                   </td>
                   <td className="align-middle">
                     <a
@@ -1215,7 +1215,7 @@ export default function aimResources(): JSX.Element {
                   </td>
                   <td className="align-middle">
                     Big sheet for all about mousepad speed, durabilities and
-                    recomendations
+                    recommendations
                   </td>
                   <td className="align-middle">
                     <a
