@@ -526,8 +526,8 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    A List of Individual .plo/ .json (playlist) files for Kovaaks
-                    includes some of the routines on this list
+                    A List of Individual .plo/ .json (playlist) files for
+                    Kovaaks includes some of the routines on this list
                   </td>
                   <td className="align-middle">
                     <a
@@ -585,7 +585,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={17}
+                    rowSpan={18}
                     className="align-middle bg-light text-dark text-center"
                     id="routines-specific"
                   >
@@ -913,8 +913,8 @@ export default function aimResources(): JSX.Element {
                     </a>
                   </td>
                   <td className="align-middle">
-                    A collection of recommended scenarios for Fortnite with tiers
-                    and categories
+                    A collection of recommended scenarios for Fortnite with
+                    tiers and categories
                   </td>
                   <td className="align-middle">
                     <a
@@ -1073,7 +1073,7 @@ export default function aimResources(): JSX.Element {
                 <tr>
                   <th
                     scope="row"
-                    rowSpan={11}
+                    rowSpan={12}
                     className="align-middle bg-light text-dark text-center"
                     id="misc"
                   >
@@ -1160,27 +1160,6 @@ export default function aimResources(): JSX.Element {
                   <td className="align-middle">
                     Helpful discord with advice and coaching and benchmark
                     ranking system
-                  </td>
-                </tr>
-                <tr>
-                  <td className="align-middle">
-                    <a
-                      href="https://github.com/Whisperrr/SensitivityRandomizer"
-                      className="text-reset"
-                    >
-                      Sensitivity Randomiser
-                    </a>
-                  </td>
-                  <td className="align-middle">
-                    Smoothly changes sensitivity with mouse movement randomly
-                  </td>
-                  <td className="align-middle">
-                    <a
-                      href="https://twitter.com/Whispperr"
-                      className="text-reset"
-                    >
-                      Whisper
-                    </a>
                   </td>
                 </tr>
                 <tr>
@@ -1280,6 +1259,52 @@ export default function aimResources(): JSX.Element {
                       className="text-reset"
                     >
                       sens
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://fpsmath.animafps.xyz"
+                      className="text-reset"
+                    >
+                      FPSMath discord bot
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    A Discord bot designed to convert video game sensitivities,
+                    fovs, mouse feel across themselves and preset games
+                  </td>
+                  <td className="align-middle">
+                    <a
+                      className="text-reset"
+                      href="https://twitter.com/AnimaFPS"
+                    >
+                      Anima
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="align-middle">
+                    <a
+                      href="https://discord.gg/8T6VctsV5P"
+                      className="text-reset"
+                    >
+                      Lapu4's Library
+                    </a>
+                  </td>
+                  <td className="align-middle">
+                    Lapu4's routines, playlists, other resources, documents,
+                    links to useful websites and videos, etc. are all in one
+                    place. Primarily for Japanese speakers but has also been
+                    translated.
+                  </td>
+                  <td className="align-middle">
+                    <a
+                      href="https://twitter.com/lapu4lapua"
+                      className="text-reset"
+                    >
+                      Lapu4
                     </a>
                   </td>
                 </tr>
